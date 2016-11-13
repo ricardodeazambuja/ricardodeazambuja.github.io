@@ -8,14 +8,14 @@
 title:               My Stuff
 tagline:             "Try not to get lost in all this mess..."
 description:         "Here I'm trying to present, in a kind of organised way, the things I'm doing, I've done, I'm planning to do or just dreaming about..."
-url:                 http://ricardodeazambuja.github.io
+url:                 https://ricardodeazambuja.github.io
 baseurl:             ''
 paginate:            5
 
 # About/contact
 author:
   name:              Ricardo de Azambuja
-  url:               http://ricardodeazambuja.github.io
+  url:               https://ricardodeazambuja.github.io
   email:             ricardo.azambuja@gmail.com
 
 # Custom vars
