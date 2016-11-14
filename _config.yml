@@ -23,5 +23,7 @@ collections:
     output: true
     permalink: /:categories/:year/:month/:day/:title/
 
+include: ['_pages']
+
 # Custom vars
 version:             0.0.0.alpha.0
