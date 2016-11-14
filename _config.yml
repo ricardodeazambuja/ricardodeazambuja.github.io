@@ -1,7 +1,7 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           /:categories/:year/:month/:day/:title/
+permalink:           pretty
 # relative_permalinks: true
 
 # Setup
@@ -22,7 +22,7 @@ author:
 collections:
   posts:
     output: true
-    permalink: /:categories/:year/:month/:day/:title/
+    permalink: pretty
 
 # Custom vars
 version:             0.0.0.alpha.0
