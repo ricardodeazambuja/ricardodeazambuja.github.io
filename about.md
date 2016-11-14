@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 ## About This Website
-On this website I'll try to present some of the things I'm currently working on and also some of my old projects. As an Engineer, I'm always looking forward learning and trying new things. So, I hope you will enjoy it!
+On this website, I'll try to present some of the things I'm currently working on and also some of my old projects. As an Engineer, I'm always looking forward learning and trying new things. So, I hope you will enjoy it!
 
 ## About Me
 I'm an Electrical Engineer (Five Years, Full Time, just a few survivors at the end...) with a MSc in Electrical Engineering / Automation (Two Years, Full Time, maybe even less survivors at the end...), both from [UFRGS](http://www.ufrgs.br/english/home). My undergrad certificate says "Electrical Engineering" and my training had the basic blocks from traditional Electrical Engineering degrees, but also it was strongly focused on what most people would recognize as an Electronics degree (Microcontrollers, Digital Electronics, Control Systems, Digital Communications, Power Electronics, etc). To give you an idea, my final project (yes, in my previous university the undergrads have to produce a dissertation and do a presentation to three examiners) was a system to write messages using composite video signals. My MSc, again, had a dissertation and presentation, but one of the examiner was invited from another university. The results from my MSc can be seen on my [publications](../publications/).  
