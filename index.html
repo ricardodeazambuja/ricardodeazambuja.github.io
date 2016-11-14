@@ -22,7 +22,7 @@ title: Home
 {% if paginator.total_posts > 1 %}
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.url }}/page{{paginator.next_page}}">Older</a>
+    <a class="pagination-item older" href={{ "/page" | paginator.next_page | absolute_url }}>Older</a>
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
