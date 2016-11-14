@@ -1,5 +1,6 @@
 ---
 layout: default
+fbcomments: 1
 ---
 
 <div class="post">
@@ -26,7 +27,7 @@ layout: default
 
 {% include facebook-comments.html %}
 {% if page.fbcomments %}
-  <hr/>
-  <h4>Comments</h4>
-  <div class="fb-comments" data-href="http://ricardodeazambuja.com{{ page.url }}"></div>
+<hr/>
+<h4>Comments</h4>
+<div class="fb-comments" data-href="http://ricardodeazambuja.com{{ page.url }}"></div>
 {% endif %}
