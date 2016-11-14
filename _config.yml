@@ -22,6 +22,9 @@ collections:
   posts:
     output: true
     permalink: /:categories/:year/:month/:day/:title/
+  pages:
+    output: true
+    permalink: /:title/
 
 include: ['_pages']
 
