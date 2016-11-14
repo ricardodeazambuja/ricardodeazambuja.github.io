@@ -7,10 +7,38 @@ title: My Publications
   Here you can find a list with all my publications!
 </p>
 
-1. Brusamarello, Valner J., Yeddo Braga Blauth, **R. de Azambuja**, Ivan Muller, and Fernando Rangel de Sousa. “Power Transfer With an Inductive Link and Wireless Tuning.” IEEE Transactions on Instrumentation and Measurement 62, no. 5 (May 2013): 924–31. [doi:10.1109/TIM.2013.2245041](http://dx.doi.org/10.1109/TIM.2013.2245041).
+1. **R. de Azambuja**, A. Cangelosi, and S.V. Adams. “**Diverse, Noisy and Parallel: A New Spiking Neural Network Approach for Humanoid Robot Control**.” In 2016 International Joint Conference on Neural Networks (IJCNN), 1134–42. Vancouver, 2016. [doi:10.1109/IJCNN.2016.7727325](http://dx.doi.org/10.1109/IJCNN.2016.7727325).
+  * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/7727325/)
+  * [Available online](https://github.com/ricardodeazambuja/IJCNN2016/raw/master/IJCNN2016_preprint.pdf)
+  * [Bibtex citation]()
+  * [Github repository](https://github.com/ricardodeazambuja/IJCNN2016)
+2. **Ricardo de Azambuja**, Frederico B. Klein, Martin F. Stoelen, Samantha V. Adams, and Angelo Cangelosi. “**Graceful Degradation Under Noise on Brain Inspired Robot Controllers**.” In Neural Information Processing, edited by Akira Hirose, Seiichi Ozawa, Kenji Doya, Kazushi Ikeda, Minho Lee, and Derong Liu, 195–204. Lecture Notes in Computer Science 9947. Springer International Publishing, 2016. [doi:10.1007/978-3-319-46687-3_21](http://dx.doi.org/10.1007/978-3-319-46687-3_21).
+  * [Final Springer Link version](http://link.springer.com/chapter/10.1007/978-3-319-46687-3_21)
+  * [Available online](https://github.com/ricardodeazambuja/ICONIP2016/raw/master/ICONIP2016_preprint.pdf)
+  * [Bibtex citation]()
+  * [Github repository](https://github.com/ricardodeazambuja/ICONIP2016)
+0. Brusamarello, Valner J., Yeddo Braga Blauth, **R. de Azambuja**, Ivan Muller, and Fernando Rangel de Sousa. “**Power Transfer With an Inductive Link and Wireless Tuning**.” IEEE Transactions on Instrumentation and Measurement 62, no. 5 (May 2013): 924–31. [doi:10.1109/TIM.2013.2245041](http://dx.doi.org/10.1109/TIM.2013.2245041).
   * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/6482618/)
-2. Brusamarello, V. J., Y. B. Blauth, **R. Azambuja**, and I. Muller. “A Study on Inductive Power Transfer with Wireless Tuning.” In Instrumentation and Measurement Technology Conference (I2MTC), 2012 IEEE International, 1098–1103. IEEE, 2012. [doi:10.1109/I2MTC.2012.6229372](http://dx.doi.org/10.1109/I2MTC.2012.6229372).
+  * [Available online (Google)](http://scholar.google.com/scholar?oi=bibs&hl=en&cluster=16111281918178162486)
+  * [Bibtex citation]()
+0. Brusamarello, V. J., Y. B. Blauth, **R. Azambuja**, and I. Muller. “**A Study on Inductive Power Transfer with Wireless Tuning**.” In Instrumentation and Measurement Technology Conference (I2MTC), 2012 IEEE International, 1098–1103. IEEE, 2012. [doi:10.1109/I2MTC.2012.6229372](http://dx.doi.org/10.1109/I2MTC.2012.6229372).
   * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/6229372/)
-3. **R. Azambuja**, V. J. Brusamarello, S. Haffner, and R. W. Porto. “Full Four Capacitor Circuit Compensation for Inductive Power Transfer.” In Instrumentation and Measurement Technology Conference (I2MTC), 2013 IEEE International, 183–187. IEEE, 2013. [doi:10.1109/I2MTC.2013.6555406](http://dx.doi.org/10.1109/I2MTC.2013.6555406).
+  * [Available online (Google)](http://www.google.com/search?q="A+Study+on+Inductive+Power+Transfer+with+Wireless+Tuning")
+  * [Bibtex citation]()
+0. **R. Azambuja**, V. J. Brusamarello, S. Haffner, and R. W. Porto. “**Full Four Capacitor Circuit Compensation for Inductive Power Transfer**.” In Instrumentation and Measurement Technology Conference (I2MTC), 2013 IEEE International, 183–187. IEEE, 2013. [doi:10.1109/I2MTC.2013.6555406](http://dx.doi.org/10.1109/I2MTC.2013.6555406).
   * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/6555406/)
+  * [Available online (Google)](http://www.google.com/search?q="Full+four+capacitor+circuit+compensation+for+inductive+power+transfer")
+  * [Bibtex citation]()
+0. **R. de Azambuja**, V.J. Brusamarello, S. Haffner, and R. Wolff Porto. “**Analysis and Optimization of an Inductive Power Transfer With a Randomized Method**.” IEEE Transactions on Instrumentation and Measurement 63, no. 5 (May 2014): 1145–52. [doi:10.1109/TIM.2013.2296397](http://dx.doi.org/10.1109/TIM.2013.2296397).
+  * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/6719500/)
+  * [Available online (Google)](http://scholar.google.com/scholar?oi=bibs&hl=en&cluster=12486241629850522524)
+  * [Bibtex citation]()
+0. R. W. Porto, V. J. Brusamarello, I. Muller, F. R. Sousa, and **R. Azambuja**. “**Design and Optimization of a Power Inductive Link**.” In Instrumentation and Measurement Technology Conference (I2MTC), 2014 IEEE International, 648–53. IEEE, 2014. [doi:10.1109/I2MTC.2014.6860823](http://dx.doi.org/10.1109/I2MTC.2014.6860823).
+  * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/6860823/)
+  * [Available online (Google)](http://scholar.google.com/scholar?oi=bibs&hl=en&cluster=10833638267026289437)
+  * [Bibtex citation]()
+0. Porto, R. W., V. J. Brusamarello, **R. Azambuja**, and O. Frison. “**Design and Analysis of a GMR Eddy Current Probe for NDT**.” In Sensing Technology (ICST), 2013 Seventh International Conference on, 424–429. IEEE, 2013. [doi:10.1109/ICSensT.2013.6727688](http://dx.doi.org/10.1109/ICSensT.2013.6727688).
+  * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/6727688/)
+  * [Available online (Google)](http://scholar.google.com/scholar?oi=bibs&hl=en&cluster=17563980425261212421)
+  * [Bibtex citation]()
 
