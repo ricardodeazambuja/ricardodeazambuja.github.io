@@ -3,15 +3,15 @@ layout: page
 title: My Publications
 ---
 
-<p class="message">
-  Here you can find a list with all my publications!
-</p>
-
 1. **R. de Azambuja**, A. Cangelosi, and S.V. Adams. “**_Diverse, Noisy and Parallel: A New Spiking Neural Network Approach for Humanoid Robot Control_**.” In 2016 International Joint Conference on Neural Networks (IJCNN), 1134–42. Vancouver, 2016. [doi:10.1109/IJCNN.2016.7727325](http://dx.doi.org/10.1109/IJCNN.2016.7727325).
   * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/7727325/)
   * [Available online](https://github.com/ricardodeazambuja/IJCNN2016/raw/master/IJCNN2016_preprint.pdf)
   * [Bibtex citation](https://github.com/ricardodeazambuja/ricardodeazambuja.github.io/raw/master/public/citations/de_azambuja_diverse_2016.bib)
   * [Github repository](https://github.com/ricardodeazambuja/IJCNN2016)
+<p class="message">
+Abstract:  
+How exactly our brain works is still an open question, but one thing seems to be clear: biological neural systems are computationally powerful, robust and noisy. Using the Reservoir Computing paradigm based on Spiking Neural Networks, also known as Liquid State Machines, we present results from a novel approach where diverse and noisy parallel reservoirs, totalling 3,000 modelled neurons, work together receiving the same averaged feedback. Inspired by the ideas of action learning and embodiment we use the safe and flexible industrial robot BAXTER in our experiments. The robot was taught to draw three different 2D shapes on top of a desk using a total of four joints. Together with the parallel approach, the same basic system was implemented in a serial way to compare it with our new method. The results show our parallel approach enables BAXTER to produce the trajectories to draw the learned shapes more accurately than the traditional serial one.
+</p>
 2. **Ricardo de Azambuja**, Frederico B. Klein, Martin F. Stoelen, Samantha V. Adams, and Angelo Cangelosi. “**_Graceful Degradation Under Noise on Brain Inspired Robot Controllers_**.” In Neural Information Processing, edited by Akira Hirose, Seiichi Ozawa, Kenji Doya, Kazushi Ikeda, Minho Lee, and Derong Liu, 195–204. Lecture Notes in Computer Science 9947. Springer International Publishing, 2016. [doi:10.1007/978-3-319-46687-3_21](http://dx.doi.org/10.1007/978-3-319-46687-3_21).
   * [Final Springer Link version](http://link.springer.com/chapter/10.1007/978-3-319-46687-3_21)
   * [Available online](https://github.com/ricardodeazambuja/ICONIP2016/raw/master/ICONIP2016_preprint.pdf)
