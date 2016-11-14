@@ -29,5 +29,5 @@ fbcomments: 1
 {% if page.fbcomments %}
 <hr/>
 <h4>Comments</h4>
-<div class="fb-comments" data-href="http://ricardodeazambuja.com{{ page.url }}"></div>
+<div class="fb-comments" data-href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" data-numposts="5"></div>
 {% endif %}
