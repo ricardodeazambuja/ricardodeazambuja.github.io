@@ -22,7 +22,7 @@ author:
 collections:
   posts:
     output: true
-    permalink: pretty
+    permalink: :categories/:year/:month/:day/:title/
 
 # Custom vars
 version:             0.0.0.alpha.0
