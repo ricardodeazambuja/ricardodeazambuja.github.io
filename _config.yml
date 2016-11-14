@@ -18,6 +18,12 @@ author:
   url:               https://ricardodeazambuja.github.io
   email:             ricardo.azambuja@gmail.com
 
+#
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
 # Custom vars
 version:             0.0.0.alpha.0
 fbcomments:          yes
