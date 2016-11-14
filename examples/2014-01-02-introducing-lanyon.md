@@ -1,7 +1,11 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: Hello World!
 ---
+
+This is my first attempt using [Jekyll](http://jekyllrb.com). It all started because my colleague, Massimiliano, showed me his brand new Jekyll based [website](http://mpatacchiola.github.io/). Actually, I'd tried Jekyll before, but when I read the first line asking me to install Ruby, RubyGems, NodeJS and then install Jekyll, I instantaneously gave up.
+
+
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
