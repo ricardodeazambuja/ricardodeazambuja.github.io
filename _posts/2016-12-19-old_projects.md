@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Old Projects
+title: My Old Projects or Why You Should Document and Share Your Stuff Online
 category: projects
 ---
 
