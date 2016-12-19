@@ -4,7 +4,7 @@ title: My Old Projects or Why You Should Document and Share Your Stuff Online
 category: projects
 ---
 
-Today I've decided to write something to make sure I'm not going to forget, again, about my old projects. Another reason for this post is to be an incentive for sharing / publishing your work online. If I had published everything online, as I was developing, I would not need to write a post about things from the past as I doing right now ;)  
+Today I've decided to write something to make sure I'm not going to forget, again, about my old projects. Another reason for this post is to be an incentive for sharing / publishing your work online. If I had published everything online, as I was developing, I would not need to write a post about things from the past like I'm doing right now ;)  
 
 When I was still an undergrad student (2000-2005), mobile phones with good quality cameras were not available and only in 2004 (or 2005?) I got one with a really noisy, probably VGA, camera.  I was only able to have such a phone because I found an unsolvable bug on my old one, while still on guarantee, and they had no choice but give me a better one (Brazil has some really nice consumer protection laws). Also, Dropbox, GoogleDrive, etc were not available and it was quite common to lose data from time to time after a problem with a hard drive. 
 
