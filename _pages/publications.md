@@ -3,6 +3,9 @@ layout: page
 title: My Publications
 ---
 
+## [My Google Schollar Page](https://scholar.google.co.uk/citations?user=F8AFA4gAAAAJ)
+## [My ResearchGate Page](https://www.researchgate.net/ricardodeazambuja)
+
 1. **R. de Azambuja**, V.J. Brusamarello, S. Haffner, and R. Wolff Porto. “**_Analysis and Optimization of an Inductive Power Transfer With a Randomized Method_**.” IEEE Transactions on Instrumentation and Measurement 63, no. 5 (May 2014): 1145–52. [doi:10.1109/TIM.2013.2296397](http://dx.doi.org/10.1109/TIM.2013.2296397).
   * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/6719500/)
   * [Available online (Google)](http://scholar.google.com/scholar?oi=bibs&hl=en&cluster=12486241629850522524)
