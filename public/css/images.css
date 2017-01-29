@@ -3,7 +3,7 @@ img[src$="centerme"] {
   margin: 0 auto;
 }
 
-.videoWrapper iframe {
+.videoWrapper {
    margin: 0 auto;
    text-align:center;
 }
