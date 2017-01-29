@@ -6,6 +6,7 @@ img[src$="centerme"] {
 .videoWrapper {
    margin: 0 auto;
    text-align:center;
+   display:block;
 }
 
 .videoWrapper iframe {
