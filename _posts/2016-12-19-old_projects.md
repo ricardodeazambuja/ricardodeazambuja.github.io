@@ -50,10 +50,13 @@ After I graduated (January 2006), I started working full time in my family's eng
 In 2011, I started my Master's degree in Electrical Engineering / Automation. At the beginning, I was planing to do my dissertation on non-destructive testing (NDT) based on [Barkhausen effect](https://en.wikipedia.org/wiki/Barkhausen_effect). I developed quite a few things including special sensor coils and a super-high-gain-and-low-noise amplifier. However, lack of equipments and "destiny" forced me to change from Barkhausen noise to [wireless power transmission](http://ricardodeazambuja.com/publications/). And, one more time, I did not save pictures or the schematics from most of the things I developed. In fact, from my master's I have the papers and very few photographs. It was a two years degree where the first year was dedicated to attend modules from the graduate school. I attended Linear Systems, Optimization, Stochastic Processes, Instrumentation, Design of Experiments and Advanced DSP. For Optimization, we manually developed a lot of algorithms in Matlab (and I have nothing saved). Design of Experiments had a initial part on Monte Carlo methods and a second one on the design of experiments itself (yep, nothing saved again!). Stochastic Processes, Advanced DSP and Linear Systems were more traditional modules, however we developed quite a few things in Matlab, but I don't have a line of code saved. The only pictures I could find after asking a lot of different things to my Gmail account were the ones from a special shaker we developed using an unbalanced motor and one from my workbench while I was executing the experiments for my master's thesis.
 ![Shaker]({{ site.url }}/public/images/shaker_1.png?style=centerme)
 *Shaker - it was strong and big enough that a person could hop on!*  
+
 ![Shaker]({{ site.url }}/public/images/shaker_2.png?style=centerme)
 *Shaker - eccentric load attached to a DC motor to vary the frequency of oscillation*  
+
 ![Shaker]({{ site.url }}/public/images/shaker_3.png?style=centerme)
 *Shaker - Springs*  
+
 ![My workbench]({{ site.url }}/public/images/ExperimentoBancada.jpg?style=centerme)
 *My workbench, at home, during the final stage of my Master's degree*  
 
