@@ -14,7 +14,7 @@ During my years as an undergrad Electrical Engineering student, I've developed s
 
 Luckily, my final project was preserved (thanks to the aforementioned noisy mobile camera and better backup systems) and I've managed to upload it to github too ([TEXVID](https://github.com/ricardodeazambuja/TEXvid)). It was based on the Microchip PIC16F and entirely written in Assembly! It was a very simple system capable of showing messages using a TV with composite video input.
 ![TEXVID]({{ site.url }}/public/images/texvid_working.jpeg?style=centerme)
-*TEXvid - Message Generator for Composite Video based on PIC16F*  
+<p class="caption">TEXvid - Message Generator for Composite Video based on PIC16F</p>
 
 So, around the time I was finishing my first degree, I had this idea of building my own hobby CNC router. It was not an easy task in Brazil at that time (2006?) because, sometimes, we could not find the most basic parts (with a reasonable price). Also, I had just got married, moved to a new house and I didn't have proper tools. This time I had a camera, but I didn't have time to properly document it and I thought I would do it when I had a better design, etc. This first machine was built using drawer slides, since I could not afford real ball bearing guides. The only picture I have is this one:  
 ![My first tentative for CNC router]({{ site.url }}/public/images/MyFirstRouter.jpg?style=centerme)
