@@ -5,6 +5,7 @@ img[src$="centerme"] {
 
 em {
   text-align: center;
+  align-self: center;
 }
 
 .video-container {
