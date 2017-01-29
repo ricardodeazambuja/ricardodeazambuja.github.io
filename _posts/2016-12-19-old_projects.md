@@ -21,18 +21,21 @@ Because it was quite hard to build things that would need to be parallel, I star
 ![My polar or radial router]({{ site.url }}/public/MyRadialRouter.jpg?style=centerme)  
 
 After I graduated (January 2006), I started working full time in my family's engineering company. The company doesn't exist anymore, but I still keep the old website online ([Azamec.com](http://azamec.com)). Actually, I started working with my father when I was a lot younger than that. My father was not a big fan of computers, so he would always buy the computers and teach me how to use them - this way I was his computer operator. I loved that because I always had cool computers (and I could also use them for games!). Here are some videos of the equipments we produced:  
+
 <div class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UOWg353JbDk" frameborder="0" allowfullscreen></iframe>
 </div>
-  
+<br />
 <div class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UQGq369V3AI" frameborder="0" allowfullscreen></iframe>
 </div>
-  
+<br />
+
 <div class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wz_oYNcNnos" frameborder="0" allowfullscreen></iframe>
 </div>
-  
+<br />
+
 <div class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oHGCXv1XYxI" frameborder="0" allowfullscreen></iframe>
 </div>
