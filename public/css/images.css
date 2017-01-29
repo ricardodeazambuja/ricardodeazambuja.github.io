@@ -3,6 +3,8 @@ img[src$="centerme"] {
   margin: 0 auto;
 }
 
-div, iframe {
+iframe {
+  margin: 0 auto;
   text-align: center
+  display:block;
 }
