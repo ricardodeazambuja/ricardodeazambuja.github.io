@@ -9,8 +9,10 @@ Today, I've decided to write something to make sure I'm not going to forget, aga
 When I was still an undergrad student (2000-2005), mobile phones with good quality cameras were not available and only in 2004 (or 2005?) I got one with a really noisy, probably VGA, camera.  I was only able to have such a phone because I found an unsolvable bug on my old one, while still on guarantee, and they had no choice but give me a better one (Brazil has some really nice consumer protection laws). Also, Dropbox, GoogleDrive, etc were not available and it was quite common to lose data from time to time after a problem with a hard drive.
 
 During my years as an undergrad Electrical Engineering student, I've developed some interesting projects, but most of them I've not saved any picture, schematic, etc. For one of my analog electronics modules, my group designed a circuit to multiply two input signals using only transistors. I still remember that Analog Devices had one IC that could do exactly what we struggled to build for that module. The control systems module demanded us to develop an analog PID controller and I implemented a controller for CPU fans. Later on, I've worked on a Neural Network implementation using FPGA that should be able to recognise simple numbers. All those projects are lost, since I don't have backup of anything or photos. My first project to have a digital picture saved was during the microcontrollers module. My group designed a home automation system, based on 8051, where you could activate relays through DTMF. Here is the picture (we recycled my old 56K USRobotics faxmodem plastic enclosure):  
-![DARVIT]({{ site.url }}/public/images/DARVIT_2.jpg?style=centerme)
-*DARVIT - 8051 based home automation system*  
+<figure>
+  <img src="{{ site.url }}/public/images/DARVIT_2.jpg?style=centerme" alt="DARVIT">
+  <figcaption>DARVIT - 8051 based home automation system.</figcaption>
+</figure>
 
 Luckily, my final project was preserved (thanks to the aforementioned noisy mobile camera and better backup systems) and I've managed to upload it to github too ([TEXVID](https://github.com/ricardodeazambuja/TEXvid)). It was based on the Microchip PIC16F and entirely written in Assembly! It was a very simple system capable of showing messages using a TV with composite video input.
 ![TEXVID]({{ site.url }}/public/images/texvid_working.jpeg?style=centerme)
