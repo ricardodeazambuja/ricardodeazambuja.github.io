@@ -6,8 +6,10 @@ img[src$="centerme"] {
 figure {
     display: block;
     margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
     border-style: solid;
-    border-width: 2px;
+    border-width: 5px;
 }
 
 .video-container {
