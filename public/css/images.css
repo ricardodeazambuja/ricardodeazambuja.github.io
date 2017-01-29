@@ -3,6 +3,10 @@ img[src$="centerme"] {
   margin: 0 auto;
 }
 
+em {
+  text-align: center;
+}
+
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
