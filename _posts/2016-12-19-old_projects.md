@@ -14,17 +14,23 @@ During my years as an undergrad Electrical Engineering student, I've developed s
   <figcaption>DARVIT - 8051 based home automation system.</figcaption>
 </figure>
 
-Luckily, my final project was preserved (thanks to the aforementioned noisy mobile camera and better backup systems) and I've managed to upload it to github too ([TEXVID](https://github.com/ricardodeazambuja/TEXvid)). It was based on the Microchip PIC16F and entirely written in Assembly! It was a very simple system capable of showing messages using a TV with composite video input.
-![TEXVID]({{ site.url }}/public/images/texvid_working.jpeg?style=centerme)
-<p class="caption">TEXvid - Message Generator for Composite Video based on PIC16F</p>
+Luckily, my final project was preserved (thanks to the aforementioned noisy mobile camera and better backup systems) and I've managed to upload it to github too ([TEXVID](https://github.com/ricardodeazambuja/TEXvid)). It was based on the Microchip PIC16F and entirely written in Assembly! It was a very simple system capable of showing messages using a TV with composite video input.  
+<figure>
+  <img src="{{ site.url }}/public/images/texvid_working.jpeg?style=centerme" alt="TEXVID">
+  <figcaption>TEXvid - Message Generator for Composite Video based on PIC16F.</figcaption>
+</figure>
 
 So, around the time I was finishing my first degree, I had this idea of building my own hobby CNC router. It was not an easy task in Brazil at that time (2006?) because, sometimes, we could not find the most basic parts (with a reasonable price). Also, I had just got married, moved to a new house and I didn't have proper tools. This time I had a camera, but I didn't have time to properly document it and I thought I would do it when I had a better design, etc. This first machine was built using drawer slides, since I could not afford real ball bearing guides. The only picture I have is this one:  
-![My first tentative for CNC router]({{ site.url }}/public/images/MyFirstRouter.jpg?style=centerme)
-*Poor guys MDF CNC Router*  
+<figure>
+  <img src="{{ site.url }}/public/images/MyFirstRouter.jpg?style=centerme" alt="Poor guys MDF CNC Router">
+  <figcaption>My first attempt to build a CNC router.</figcaption>
+</figure>
 
-Because it was quite hard to build things that would need to be parallel, I started looking for another design paradigm. The inspiration came from an old Elektor magazine where they presented a [CNC machine using polar coordinates](https://youtu.be/K7yomRmN52Q). That seemed perfect, because it would be easier to build my router using the tools I had available. However, the Elektor version had some caveats: it was necessary some gears to increase the resolution. Since I didn't have any gearbox, I developed a simple microstep driver (again using the PIC16F) to increase the resolution. I had a digital camera, but because my life was very busy and I was moving again to a new place, I saved only this picture:
-![My polar or radial router]({{ site.url }}/public/images/MyRadialRouter.jpg?style=centerme)
-*Polar plotter (it was supposed to become, one day, a PCB engraver)*  
+Because it was quite hard to build things that would need to be parallel, I started looking for another design paradigm. The inspiration came from an old Elektor magazine where they presented a [CNC machine using polar coordinates](https://youtu.be/K7yomRmN52Q). That seemed perfect, because it would be easier to build my router using the tools I had available. However, the Elektor version had some caveats: it was necessary some gears to increase the resolution. Since I didn't have any gearbox, I developed a simple microstep driver (again using the PIC16F) to increase the resolution. I had a digital camera, but because my life was very busy and I was moving again to a new place, I saved only this picture:  
+<figure>
+  <img src="{{ site.url }}/public/images/MyRadialRouter.jpg?style=centerme" alt="My polar or radial router">
+  <figcaption>My polar or radial router: it was supposed to become, one day, a PCB engraver.</figcaption>
+</figure>
 
 After I graduated (January 2006), I started working full time in my family's engineering company. The company doesn't exist anymore, but I still keep the old website online ([Azamec.com](http://azamec.com)). Actually, I started working with my father when I was a lot younger than that. My father was not a big fan of computers, so he would always buy the computers and teach me how to use them - this way I was his computer operator. I loved that because I always had cool computers (and I could also use them for games!). Here are some videos of the equipments we produced:  
 
@@ -50,16 +56,24 @@ After I graduated (January 2006), I started working full time in my family's eng
 
 
 In 2011, I started my Master's degree in Electrical Engineering / Automation. At the beginning, I was planing to do my dissertation on non-destructive testing (NDT) based on [Barkhausen effect](https://en.wikipedia.org/wiki/Barkhausen_effect). I developed quite a few things including special sensor coils and a super-high-gain-and-low-noise amplifier. However, lack of equipments and "destiny" forced me to change from Barkhausen noise to [wireless power transmission](http://ricardodeazambuja.com/publications/). And, one more time, I did not save pictures or the schematics from most of the things I developed. In fact, from my master's I have the papers and very few photographs. It was a two years degree where the first year was dedicated to attend modules from the graduate school. I attended Linear Systems, Optimization, Stochastic Processes, Instrumentation, Design of Experiments and Advanced DSP. For Optimization, we manually developed a lot of algorithms in Matlab (and I have nothing saved). Design of Experiments had a initial part on Monte Carlo methods and a second one on the design of experiments itself (yep, nothing saved again!). Stochastic Processes, Advanced DSP and Linear Systems were more traditional modules, however we developed quite a few things in Matlab, but I don't have a line of code saved. The only pictures I could find after asking a lot of different things to my Gmail account were the ones from a special shaker we developed using an unbalanced motor and one from my workbench while I was executing the experiments for my master's thesis.
-![Shaker]({{ site.url }}/public/images/shaker_1.png?style=centerme)
-*Shaker - it was strong and big enough that a person could hop on!*  
+<figure>
+  <img src="{{ site.url }}/public/images/shaker_1.jpg?style=centerme" alt="My polar or radial router">
+  <figcaption>Shaker - it was strong and big enough that a person could hop on!</figcaption>
+</figure>
 
-![Shaker]({{ site.url }}/public/images/shaker_2.png?style=centerme)
-*Shaker - eccentric load attached to a DC motor to vary the frequency of oscillation*  
+<figure>
+  <img src="{{ site.url }}/public/images/shaker_2.jpg?style=centerme" alt="My polar or radial router">
+  <figcaption>Shaker - details of the eccentric load attached to a DC motor to vary the frequency of oscillation.</figcaption>
+</figure>
 
-![Shaker]({{ site.url }}/public/images/shaker_3.png?style=centerme)
-*Shaker - Springs*  
+<figure>
+  <img src="{{ site.url }}/public/images/shaker_3.jpg?style=centerme" alt="My polar or radial router">
+  <figcaption>Shaker - Springs.</figcaption>
+</figure>
 
-![My workbench]({{ site.url }}/public/images/ExperimentoBancada.jpg?style=centerme)
-*My workbench, at home, during the final stage of my Master's degree*  
+<figure>
+  <img src="{{ site.url }}/public/images/ExperimentoBancada.jpg?style=centerme" alt="My polar or radial router">
+  <figcaption>My workbench, at home, during the final stage of my Master's degree.</figcaption>
+</figure>
 
 I've only really learned about sharing and publishing things online during my Ph.D, but not at the first year! I don't know why, but I had this silly feeling that I should not publish my work online. I only managed to learn when I finished the first version of my [Spiking Neural Network simulator](https://github.com/ricardodeazambuja/BEE) and started using Github. Now, I really don't care if it is unfinished, badly documented or it's simply not such a great piece of code, I publish everything online as soon as possible :D  
