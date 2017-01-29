@@ -12,6 +12,10 @@ figure {
     border-width: 5px;
 }
 
+figcaption {
+    text-indent: 10px;
+}
+
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
