@@ -2,3 +2,7 @@ img[src$="centerme"] {
   display:block;
   margin: 0 auto;
 }
+
+div, iframe {
+  text-align: center
+}
