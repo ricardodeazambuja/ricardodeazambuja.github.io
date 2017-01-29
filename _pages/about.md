@@ -11,7 +11,7 @@ I've been an entrepreneur since ever ([Engineering Company](http://ricardodeazam
 
 ### Old projects
 If you want to see a little bit about some of my old projects, I've a post that talks exactly about them:  
-[My Old Projects or Why You Should Document and Share Your Stuff Online](.../projects/2016/12/19/old_projects/)
+[My Old Projects or Why You Should Document and Share Your Stuff Online](../projects/2016/12/19/old_projects/)
 
 
 <p class="message">
