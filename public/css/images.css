@@ -3,7 +3,7 @@ img[src$="centerme"] {
   margin: 0 auto;
 }
 
-.emoji img {
+.emoji {
   display: inline;
   max-width: 100%;
   margin: 0;
