@@ -2,7 +2,7 @@
 layout: post
 title: Easy-peasy Deep Learning and Convolutional Networks with Keras
 category: deep learning
-draft: false
+draft: true
 ---
 Deep learning... wow... this is "the" hot topic since, at least, some good years ago! I've attended a few seminars and workshops about deep learning, nevertheless I've never tried to code something myself - until now! - because I had always another [priority](http://www.tastefullyoffensive.com/2013/09/the-12-types-of-procrastnators.html). Also, I have to admit, I thought it was a lot harder and it would need much more time to be able to run anything that was not simply a sample code.
 
@@ -30,9 +30,22 @@ cnmem = .7
 
 Theano can run on CPU or CPU+GPU. It will autonomously choose the CPU only mode if the GPU is not available. However, my system has a GPU and I was not able to activate its use on Theano. That's the reason why I created the *.theanorc* file. The line `device = gpu0` forces Theano to use the GPU (if you have more than one, maybe it will not be gpu0) and the line 'cnmem = .7' sets the amount of memory used by [CNMeM](http://deeplearning.net/software/theano/library/config.html#config.config.lib.cnmem). If you don't have enough memory available (laptops usually share the main memory with the GPU), it will give you an error message. Setting `cnmem = 0` disables it.
 
-Before we start, we are going to need the data set from [Kaggle Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats). It's free, but you need to sign up to have access. This data set has 25000 images divided into training (12500) and testing (12500) sets. The training one has the filenames like these examples: cat.3141.jpg and dog.3141.jpg. The idea here is not beating a state of art algorithm ([not even an old one](http://xenon.stanford.edu/~pgolle/papers/dogcat.pdf)), but only learn how to use Keras.
+Before we start *deep learning*, we are going to need the data set from [Kaggle Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats). This data set has 25000 images divided into training (12500) and testing (12500) sets. The training one has the filenames like these examples: `cat.3141.jpg` and `dog.3141.jpg`, while in the testing set the files are only a number with the `.jpg` extension. The idea here is not to beat a state of art algorithm ([not even an old one](http://xenon.stanford.edu/~pgolle/papers/dogcat.pdf)), but only learn how to use Keras.
 
-If you have a look at the images you just downloaded, you will notice they have different sizes.
+If you have a look at the images you just downloaded, you will notice they not all the same sizes. Later, we will need to simplify things or it will going to take ages to train, run, etc. I will consider the data sets now are two directories (folders, for the young ones) named: `train` and `test1`. We will need to read the images and store the their filenames as well. Since we will already have a loop going on, the images will pass through a downsampling to reduce their sizes. I will use `scipy.misc.imresize` because, IMHO, it's a lot easier to install [PIL/Pillow](https://pypi.python.org/pypi/Pillow/2.2.1) than [OpenCV](https://www.google.co.uk/webhp?q=installing+opencv+python) :innocent:.
+
+Even though it's not a good practice, I will import the packages only when they are necessary. Python is just fine with that and it is so clever that it will not import twice the same thing.
+
+Another *small* detail: the neural network we will create here accepts one dimensional (1D) vector (or lists or array, you choose the name). For that reason, we will resize (downsampling) and flatten (transform it into a 1D thing).
+
+```python
+# The package 'os' will be used to find the current
+# working directory and also to list all files in a directory
+import os
+
+
+```
+
 
 
 <div class="message">
