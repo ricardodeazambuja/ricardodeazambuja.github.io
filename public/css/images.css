@@ -7,6 +7,7 @@ img[src$="centerme"] {
   display: inline;
   max-width: 100%;
   margin: 0;
+  margin-bottom: 3px;
   border-radius: 0;
   padding:0;
 }
