@@ -26,7 +26,11 @@
             <input type="checkbox" class="task-list-item-checkbox" disabled>' |
           replace: '<li>[x]',
             '<li class="box_done task-list-item">
-            <input type="checkbox" class="task-list-item-checkbox" value="on" disabled checked>'  }}
+            <input type="checkbox" class="task-list-item-checkbox" value="on" disabled checked>' |
+          replace: '<a href=', '<a target="_blank" href=' |
+          replace: '<h1 class="post-title">
+      <a target="_blank" href=', '<h1 class="post-title">
+  <a href='  }}
       </div>
     </div>
 
