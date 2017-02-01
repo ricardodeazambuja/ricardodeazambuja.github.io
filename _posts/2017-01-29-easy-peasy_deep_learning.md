@@ -2,7 +2,7 @@
 layout: post
 title: Easy-peasy Deep Learning and Convolutional Networks with Keras - Part 1
 category: deep_learning
-draft: true
+draft: false
 published: true
 comments: true
 ---
@@ -298,7 +298,7 @@ Ok, let's see what we have achieved so far:
 
 As promised, [here](https://github.com/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/Keras%20Cats%20and%20Dogs%20-%20normal%20deep%20net%20(not%20so%20deep).ipynb) you can visualize (or download) a [Jupyter (IPython) notebook](https://ipython.org/notebook.html) with all the source code and something else.
 
-In the next post we will see how to convert our simple *deep* neural network to a convolutional neural network. Cheers!
+In the next post, we will see how to convert our simple *deep* neural network to a convolutional neural network. Cheers!
 
 <!---
 <div class="message">
