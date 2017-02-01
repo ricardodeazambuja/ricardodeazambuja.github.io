@@ -290,6 +290,7 @@ And then I decided to fiddle with the parameters using the SDG optimizer. What d
 
 
 Ok, let's see what we have achieved so far:
+
 - [x] Convince ourselves learning [Keras](https://keras.io/) is a nice investment!
 - [x] Create our very own first deep neural network (ok, not *that* deep) applying it to a well known task.
 - [ ] Show off by modifying the previous example using a convolutional layer.
