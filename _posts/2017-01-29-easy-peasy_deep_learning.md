@@ -13,7 +13,7 @@ I'm always forgetting things, so I like to take notes as if I was teaching a tod
 All the things I'll explain below will only make sense if you know what is a [Multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron) and [Feedforward neural network](https://en.wikipedia.org/wiki/Feedforward_neural_network) as well. In case you don't, no worries, Google is your friend :stuck_out_tongue_winking_eye:.
 
 <div class="message">
-  Keras is a high-level neural networks library for TensorFlow and Theano. I would call it a Python wrapper that hides extra the details necessary to create neural networks simplifying our life.
+  Keras is a high-level neural networks library for TensorFlow and Theano. I would call it a Python wrapper that hides the extra details necessary to create neural networks... simplifying our life!
 </div>
 
 Since I've just learned how [to create Github Markdown check boxes](http://blog.winddweb.info/implement-github-like-checkbox), let's write down an outline of what we want to achieve at the end:
@@ -23,11 +23,11 @@ Since I've just learned how [to create Github Markdown check boxes](http://blog.
 - [ ] Show off by modifying the previous example using a convolutional layer.
 - [ ] Enjoy our time because when you work on something you like, it is not work anymore!
 
-Am I going to reinvent the wheel? Hopefully not! I will use my very strong [*Google-fu*](https://en.wiktionary.org/wiki/Google-fu) to find something we can reuse. The first result Google gave me was [this](http://www.pyimagesearch.com/2016/09/26/a-simple-neural-network-with-python-and-keras/). The [pyimagesearch](http://www.pyimagesearch.com) website is a very good source of things related to image processing, but, I'll have to admit, I don't like the way the guy deals with his readers forcing them to use his own library and to subscribe to be able to download source code... however, he is sharing knowledge and this is a good thing :relieved:. My intention here is to partially follow his steps with some changes introduced because I thought were useful or just a matter of personal taste :satisfied: (I'm using a lot of emojis because I've just found this [emoji cheat sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)).
+Am I going to reinvent the wheel? Hopefully not! I will use my very strong [*Google-fu*](https://en.wiktionary.org/wiki/Google-fu) to find something we can reuse. The **first result** Google gave me was [this](http://www.pyimagesearch.com/2016/09/26/a-simple-neural-network-with-python-and-keras/). The [pyimagesearch](http://www.pyimagesearch.com) website is a very good source of things related to image processing, but, I'll have to admit, I don't like the way the guy deals with his readers forcing them to use his own library and to subscribe to be able to download source code... however, he is sharing knowledge and this is a good thing :relieved:. My intention here is to partially follow his steps with some changes introduced because I thought were useful or just a matter of personal taste :satisfied: (I'm using a lot of emojis because I've just found this [emoji cheat sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)).
 
-By the way, I'm supposing [Keras](https://keras.io/) and [Theano](http://deeplearning.net/software/theano/) or [TensorFlow](https://www.tensorflow.org/) are already installed, up and running. My personal experience tells me Theano is easier to install than TensorFlow, but, maybe, I was just unlucky/lucky :sunglasses:.
+By the way, I'm supposing [Keras](https://keras.io/) and [Theano](http://deeplearning.net/software/theano/) (or [TensorFlow](https://www.tensorflow.org/)) are already installed, up and running. My personal experience tells me Theano is easier to install than TensorFlow, but, maybe, I was just unlucky/lucky :sunglasses:.
 
-I'm using Theano on a laptop that has a GeForce GT 750M GPU, but I have found one caveat related to the amount of memory available (the system shares its main memory with the GPU). To have more control, I created a file on my user's home directory (`~/`) called *.theanorc* with this content:
+I'm using Theano on a laptop that has a GeForce GT 750M GPU, but I have found one caveat related to the amount of memory available (the system shares its main memory with the GPU). To have more control, I've created a file in my user's home directory (`~/`) called *.theanorc* with this content:
 
 ```
 [global]
@@ -40,9 +40,9 @@ cnmem = .7
 
 Theano can run on CPU or CPU+GPU. It will autonomously choose the CPU only mode if the GPU is not available. However, my system has a GPU and I was not able to activate its use on Theano. That's the reason why I created the *.theanorc* file. The line `device = gpu0` forces Theano to use the GPU (if you have more than one, maybe it will not be `gpu0`) and the line `cnmem = .7` sets the amount of memory used by [CNMeM](http://deeplearning.net/software/theano/library/config.html#config.config.lib.cnmem). If you don't have enough memory available (laptops usually share the main memory with the GPU), it will give you an error message. Setting `cnmem = 0` disables it.
 
-Before we start *deep learning*, we are going to need the data set from [Kaggle Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats). This data set has 25000 images divided into training (12500) and testing (12500) sets. The training one has the filenames like these examples: `cat.3141.jpg` and `dog.3141.jpg`, while in the testing set the files are only a number with the `.jpg` extension. I'm trying to beat a state of art algorithm ([not even an old one](http://xenon.stanford.edu/~pgolle/papers/dogcat.pdf)), but only to learn how to use Keras. Our network should be able to gives us an answer `0` if it is a cat and `1` if it is a dog.
+Before we start *deep learning*, we are going to need the data set from [Kaggle Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats). This data set has 25000 images divided into training (12500) and testing (12500) sets. The training one has the filenames like these examples: `cat.3141.jpg` and `dog.3141.jpg`, while in the testing set the files are only a number with the `.jpg` extension. I'm **not** trying to beat a state of art algorithm ([not even an old one](http://xenon.stanford.edu/~pgolle/papers/dogcat.pdf)), but only to learn how to use Keras. Our network should be able to gives us an answer something like a `0` if it is a cat and `1` if it is a dog.
 
-If you have a look at the images you just downloaded, you will notice they're not all the same size. Later, we will need to simplify things or it will take ages to train, run, etc. I will consider the data sets are, now, installed in two directories (folders, for the young ones) named: `train` and `test1`. We will need to read the images and store their filenames as well. Since we will have a loop going on, the images will pass through a downsampling to reduce their sizes too. I will use `scipy.misc.imresize` because, IMHO, it's a lot easier to install [PIL/Pillow](https://pypi.python.org/pypi/Pillow/2.2.1) than [OpenCV](https://www.google.co.uk/webhp?q=installing+opencv+python) :innocent:.
+If you have a look at the images you just downloaded, you will notice they're not all the same size. Later, we will need resize them (our network accepts only a fixed size input) and simplify things or it will take ages to train, run, etc. I will consider the data sets are, now, installed in two directories (folders, for the young ones) named: `train` and `test1`. We will need to read the images and store their filenames as well. Since we will have a loop going on, the images will pass through a downsampling to reduce their sizes too. I will use `scipy.misc.imresize` because, IMHO, it's a lot easier to install [PIL/Pillow](https://pypi.python.org/pypi/Pillow/2.2.1) than [OpenCV](https://www.google.co.uk/webhp?q=installing+opencv+python) :innocent:.
 
 <div class="message">
   Summarizing: it's necessary to install Theano (or TensorFlow), Keras, Scipy (Numpy) and Pillow (if it was not automatically installed with Scipy).
@@ -158,9 +158,9 @@ labels2int = {j:i for i,j in enumerate(unique_labels)}
 labels = [labels2int[i[1]] for i in training_set.values()]
 ```
 
-Ok, at the very beginning I asked about Multilayer Perceptron (MLP), Feedforward Neural Network (F... NN), etc. So, this type of NN works with [real valued numbers](https://en.wikipedia.org/wiki/Floating_point) essentially doing multiplications (also additions). If you enter a value zero (and there's no [bias](http://stackoverflow.com/a/2499936)) it will return you zero. Why am I telling you this? I thought it was something important :satisfied:.
+Ok, at the very beginning I asked about Multilayer Perceptron (MLP), Feedforward Neural Network (F... NN), etc. So, this type of NN, typically, works with [real valued numbers](https://en.wikipedia.org/wiki/Floating_point) essentially doing multiplications (also additions). If you enter a value zero (and there's no [bias](http://stackoverflow.com/a/2499936)) it will return you zero. Why am I telling you this? I thought it was something important :satisfied:.
 
-Just to refresh your memory, I'm working based on the [pyimagesearch post](http://www.pyimagesearch.com/2016/09/26/a-simple-neural-network-with-python-and-keras/). This means I will use the [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy) loss function ([Keras binary_crossentropy](https://keras.io/metrics/#binary_crossentropy)), forcing us to format the labels as vectors `[0.,1.]` and `[1.,0.]`
+Just to refresh your memory, I'm working based on the [pyimagesearch post](http://www.pyimagesearch.com/2016/09/26/a-simple-neural-network-with-python-and-keras/). This means I will use the [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy) loss function ([Keras binary_crossentropy](https://keras.io/metrics/#binary_crossentropy)) as well, forcing us to format the labels as vectors `[0.,1.]` and `[1.,0.]` and this will be the kind of answer our network will give us at the end.
 
 ```python
 # Necessary for to_categorical method.
@@ -171,7 +171,7 @@ from keras.utils import np_utils
 labels = np_utils.to_categorical(labels, 2)
 ```
 
-When you train a NN you need to have a way to test if it is learning. This is accomplished by reserving a piece of the training set for testing the network. Nevertheless, you can't just save 75% of the images... you do it randomly.
+When you train a NN you need to have a way to test if it is learning. This is accomplished by reserving a piece of the training set for testing the network. Nevertheless, you can't just save 75% of the images... you do it [randomly](http://stats.stackexchange.com/questions/248048/neural-networks-why-do-we-randomize-the-training-set/248053).
 
 ```python
 # First, we will create a numpy array going from zero to len(training_set):
@@ -208,7 +208,7 @@ testLabels = [labels[i] for i in random_selection[:int(len(training_set)*(test_s
 testLabels = numpy.array(testLabels)
 ```
 
-Finally, we will specify our *deep neural network*! I'll not explain everything because [Keras guide to Sequential model](https://keras.io/getting-started/sequential-model-guide/) is already easy-peasy. This neural network will have three layers, all the layer will use Keras [Dense](https://keras.io/layers/core/#dense) type. This layer type accepts a lot of arguments, but, for the first layer, we will only pass three: output dimension (output_dim), [input dimension (input_dim)](https://keras.io/getting-started/sequential-model-guide/#specifying-the-input-shape), [initialization (init)](https://keras.io/initializations/). After this first layer, we will add an [Activation](https://keras.io/activations/) as [rectified linear unit (ReLU)](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)). The second layer will only need two arguments (output_dim and initialization), since it can do automatic shape inference. The last one will have only two inputs because we want to classify between two classes (binary) and the [Softmax](https://en.wikipedia.org/wiki/Softmax_function) activation.
+Finally, we will create our *deep neural network* model! I'll not explain everything because [Keras guide to Sequential model](https://keras.io/getting-started/sequential-model-guide/) is already easy-peasy. This neural network will have three layers, all the layer will use Keras [Dense](https://keras.io/layers/core/#dense) type. This layer type accepts a lot of arguments, but, for the first layer, we will only pass three: output dimension (output_dim), [input dimension (input_dim)](https://keras.io/getting-started/sequential-model-guide/#specifying-the-input-shape), [initialization (init)](https://keras.io/initializations/). After this first layer, we will add an [Activation](https://keras.io/activations/) as [rectified linear unit (ReLU)](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)). The second layer will only need two arguments (output_dim and initialization), since it can do automatic shape inference. The last one will have only two inputs because we want to classify between two classes (binary) and the [Softmax](https://en.wikipedia.org/wiki/Softmax_function) activation.
 
 ```python
 # Just creates our Keras Sequential model
@@ -235,12 +235,11 @@ After finishing the network creation, we need to [compile](https://keras.io/gett
 model.compile(optimizer='rmsprop',
               loss='binary_crossentropy',
               metrics=['accuracy'])
-
-(loss, accuracy) = model.evaluate(testData, testLabels, batch_size=128, verbose=0)
 ```
 
-After compilation comes [training](https://keras.io/getting-started/sequential-model-guide/#training).  Training has even more [arguments](https://keras.io/models/sequential/#fit) than the compilation step! I'm not going to talk about all them, but these ones (from Keras documentation):
-- **batch_size:** integer. Number of samples per gradient update.
+After compilation comes [training](https://keras.io/getting-started/sequential-model-guide/#training) (the `.fit` method).  Training has even more [arguments](https://keras.io/models/sequential/#fit) than the compilation step! I'm not going to talk about all them, but these ones (from Keras documentation):
+
+- **batch_size:** integer, the number of samples per gradient update.
 - **nb_epoch:** integer, the number of epochs to train the model.
 - **verbose:** 0 for no logging to stdout, 1 for progress bar logging, 2 for one log line per epoch.
 - **initial_epoch:** epoch at which to start training (useful for resuming a previous training run).
@@ -252,7 +251,7 @@ score = model.evaluate(testData, testLabels, batch_size=128, verbose=0)
 print('Test score:', score[0])
 print('Test accuracy:', score[1])
 ```
-Using the Root Mean Square Propagation, the accuracy was basically random (accuracy 51.1520%). Let's try another [optimizer](https://keras.io/optimizers/), the first one from Keras list: [Stochastic Dradient Descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) (SDG). If you are using IPython, don't forget to recreate your model before you try to compile it again.
+Using the Root Mean Square Propagation, our network was basically random (accuracy 51.1520%). Let's try another [optimizer](https://keras.io/optimizers/), the first one from Keras list: [Stochastic Dradient Descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) (SDG). If you are using IPython, don't forget to recreate your model before you try to compile it again.
 
 ```python
 from keras.optimizers import SGD
@@ -287,7 +286,7 @@ The accuracy on the test data was 67.1840%. Probably there's a reason why SDG is
 
 After all our hard work, you should save your model. Keras models have methods for saving and loading a model. Everything is nicely explained on the [F.A.Q.](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model) and the simplest way is `model.save('my_model.h5')` to save and `model = load_model('my_model.h5')` to load everything (the architecture , the weights, the training configuration - loss, optimizer - and the state of the optimizer).
 
-And then I decided to fiddle with the parameters using the SDG optimizer. What did I do? I simply changed `nb_epoch=20` and, voilà, the accuracy went up to... 97.74%! You can find the saved model [here](keras-adventures/Dogs_vs_Cats/my_97perc_acc.h5). But, gosh, why was it so good now? In order to try to understand what happened, we must go back to where we defined our neural network. For the first two layers, we added this argument: `init="uniform"`. Therefore, those layers had their weights randomly assigned ([uniform distribution](https://en.wikipedia.org/wiki/Uniform_distribution_(continuous))). A further reason could be [overfitting](https://en.wikipedia.org/wiki/Overfitting) because the number of epochs were reduced from 50 to 20.
+And then I decided to fiddle with the parameters using the SDG optimizer. What did I do? I simply changed `nb_epoch=20` and, *voilà*, the accuracy went up to... 97.74%! You can find the saved model [here](keras-adventures/Dogs_vs_Cats/my_97perc_acc.h5). But, gosh, why was it so good now? In order to try to understand what happened, we must go back to where we defined our neural network. For the first two layers, we added this argument: `init="uniform"`. Therefore, those layers had their weights randomly assigned ([uniform distribution](https://en.wikipedia.org/wiki/Uniform_distribution_(continuous))). A further reason could be [overfitting](https://en.wikipedia.org/wiki/Overfitting) because the number of epochs were reduced from 50 to 20.
 
 
 Ok, let's see what we have achieved so far:
