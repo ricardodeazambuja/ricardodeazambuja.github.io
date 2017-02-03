@@ -6,6 +6,7 @@ draft: false
 published: true
 comments: true
 ---
+
 [Deep learning](https://en.wikipedia.org/wiki/Deep_learning)... wow... this is "the" [hot topic](http://fortune.com/ai-artificial-intelligence-deep-machine-learning/) since, at least, some good years ago! I've attended a few seminars and workshops about deep learning, nevertheless I've never tried to code something myself - until now! - because I had always another [priority](http://www.tastefullyoffensive.com/2013/09/the-12-types-of-procrastnators.html). Also, I have to admit, I thought it was a lot harder and it would need much more time to be able to run anything that was not simply a sample code.
 
 I'm always forgetting things, so I like to take notes as if I was teaching a toddler. Consequently, this post was designed to remember myself when I forget how to use Keras :expressionless:.
@@ -27,7 +28,7 @@ Am I going to reinvent the wheel? Hopefully not! I will use my very strong [*Goo
 
 By the way, I'm supposing [Keras](https://keras.io/) and [Theano](http://deeplearning.net/software/theano/) (or [TensorFlow](https://www.tensorflow.org/)) are already installed, up and running. My personal experience tells me Theano is easier to install than TensorFlow, but, maybe, I was just unlucky/lucky :sunglasses:.
 
-I'm using Theano on a laptop that has a GeForce GT 750M GPU, but I have found one caveat related to the amount of memory available (the system shares its main memory with the GPU). To have more control, I've created a file in my user's home directory (`~/`) called *.theanorc* with this content:
+I'm using Theano on a laptop that has a GeForce GT 750M GPU, but I have found one caveat related to the amount of memory available (~~the system shares its main memory with the GPU~~ *I've found out it actually has 2GB of dedicated GDDR5 memory*). To have more control, I've created a file in my user's home directory (`~/`) called *.theanorc* with this content:
 
 ```
 [global]
@@ -38,7 +39,7 @@ device = gpu0
 cnmem = .7
 ```
 
-Theano can run on CPU or CPU+GPU. It will autonomously choose the CPU only mode if the GPU is not available. However, my system has a GPU and I was not able to activate its use on Theano. That's the reason why I created the *.theanorc* file. The line `device = gpu0` forces Theano to use the GPU (if you have more than one, maybe it will not be `gpu0`) and the line `cnmem = .7` sets the amount of memory used by [CNMeM](http://deeplearning.net/software/theano/library/config.html#config.config.lib.cnmem). If you don't have enough memory available (laptops usually share the main memory with the GPU), it will give you an error message. Setting `cnmem = 0` disables it.
+Theano can run on CPU or CPU+GPU. It will autonomously choose the CPU only mode if the GPU is not available. However, my system has a GPU and I was not able to activate its use on Theano. That's the reason why I created the *.theanorc* file. The line `device = gpu0` forces Theano to use the GPU (if you have more than one, maybe it will not be `gpu0`) and the line `cnmem = .7` sets the amount of memory used by [CNMeM](http://deeplearning.net/software/theano/library/config.html#config.config.lib.cnmem). If you don't have enough memory available (~~laptops usually share the main memory with the GPU~~), it will give you an error message. Setting `cnmem = 0` disables it.
 
 Before we start *deep learning*, we are going to need the data set from [Kaggle Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats). This data set has 25000 images divided into training (12500) and testing (12500) sets. The training one has the filenames like these examples: `cat.3141.jpg` and `dog.3141.jpg`, while in the testing set the files are only a number with the `.jpg` extension. I'm **not** trying to beat a state of art algorithm ([not even an old one](http://xenon.stanford.edu/~pgolle/papers/dogcat.pdf)), but only to learn how to use Keras. Our network should be able to gives us an answer something like a `0` if it is a cat and `1` if it is a dog.
 
@@ -286,8 +287,19 @@ The accuracy on the test data was 67.1840%. Probably there's a reason why SDG is
 
 After all our hard work, you should save your model. Keras models have methods for saving and loading a model. Everything is nicely explained on the [F.A.Q.](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model) and the simplest way is `model.save('my_model.h5')` to save and `model = load_model('my_model.h5')` to load everything (the architecture , the weights, the training configuration - loss, optimizer - and the state of the optimizer).
 
-And then I decided to fiddle with the parameters using the SDG optimizer. What did I do? I simply changed `nb_epoch=20` and, *voilà*, the accuracy went up to... 97.74%! You can find the saved model [here](keras-adventures/Dogs_vs_Cats/my_97perc_acc.h5). But, gosh, why was it so good now? In order to try to understand what happened, we must go back to where we defined our neural network. For the first two layers, we added this argument: `init="uniform"`. Therefore, those layers had their weights randomly assigned ([uniform distribution](https://en.wikipedia.org/wiki/Uniform_distribution_(continuous))). A further reason could be [overfitting](https://en.wikipedia.org/wiki/Overfitting) because the number of epochs were reduced from 50 to 20. In the future, I will try to fight overfitting using the [dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) technique [already available in Keras](https://keras.io/layers/core/#dropout).
+And then I decided to fiddle with the parameters using the SDG optimizer. What did I do? I simply changed `nb_epoch=20` and, *voilà*, the accuracy went up to... 97.74%! You can find the saved model [here](https://github.com/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/my_97perc_acc.h5?raw=true). But, gosh, why was it so good now? In order to try to understand what happened, we must go back to where we defined our neural network. For the first two layers, we added this argument: `init="uniform"`. Therefore, those layers had their weights randomly assigned ([uniform distribution](https://en.wikipedia.org/wiki/Uniform_distribution_(continuous))). A further reason could be [overfitting](https://en.wikipedia.org/wiki/Overfitting) because the number of epochs were reduced from 50 to 20. In the future, I will try to fight overfitting using the [dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) technique [already available in Keras](https://keras.io/layers/core/#dropout).
 
+Here are the results from the best neural network (the 97.74% accuracy one) using images from the test set (the 25% randomly chosen images from the directory train):
+<figure>
+  <img src="{{ site.url }}/public/images/dog_vs_cat_test_set.png?style=centerme" alt="dogs-vs-cats">
+  <figcaption>Testing the Neural Network against images from the test set.</figcaption>
+</figure>
+
+And using images never seen before (directory test1):
+<figure>
+  <img src="{{ site.url }}/public/images/dog_vs_cat_novel.png?style=centerme" alt="dogs-vs-cats">
+  <figcaption>Testing the Neural Network against images it has never seen before.</figcaption>
+</figure>
 
 Ok, let's see what we have achieved so far:
 
