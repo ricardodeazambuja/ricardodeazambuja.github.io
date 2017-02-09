@@ -2,6 +2,11 @@
 layout: page
 title: My Publications
 ---
+<figure style="border-width:0; width:30%; height:30%;">
+  <a href="http://orcid.org/0000-0003-0185-545X">
+  <img src="{{ site.url }}/public/images/my_orcid_qrcode.png?style=centerme" alt="ORCID QRCODE">
+  </a>
+</figure>
 
 1. **R. de Azambuja**, V.J. Brusamarello, S. Haffner, and R. Wolff Porto. “**_Analysis and Optimization of an Inductive Power Transfer With a Randomized Method_**.” IEEE Transactions on Instrumentation and Measurement 63, no. 5 (May 2014): 1145–52. [doi:10.1109/TIM.2013.2296397](http://dx.doi.org/10.1109/TIM.2013.2296397).
   * [Final IEEE Xplore version](http://ieeexplore.ieee.org/document/6719500/)
