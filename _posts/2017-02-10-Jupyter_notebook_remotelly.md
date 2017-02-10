@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Running a Jupyter Notebook (IPython) in a remote server
+title: Running a Jupyter Notebook (IPython) on a remote server
 category: jupyter_notebooks
 draft: false
 published: true
