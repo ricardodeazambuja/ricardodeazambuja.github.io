@@ -17,6 +17,7 @@ Do you know what is a [Jupyter Notebook](http://jupyter.org/)? If you don't, ple
 Why do I love those notebooks? Probably it's started long time ago while I still was a [Mathematica](https://www.wolfram.com/mathematica/), [Maple](http://www.maplesoft.com/products/maple/) and [MuPad](https://uk.mathworks.com/discovery/mupad.html) user, but I would say I like notebooks mainly because I can keep, in one place, code, comments (pure text, [Markdown](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Working%20With%20Markdown%20Cells.html), [HTML](https://blog.dominodatalab.com/lesser-known-ways-of-using-notebooks/), [LaTeX](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Typesetting%20Equations.html), [animations](http://louistiao.me/posts/notebooks/embedding-matplotlib-animations-in-jupyter-notebooks/), [external images/videos](http://nbviewer.jupyter.org/github/ipython/ipython/blob/1.x/examples/notebooks/Part%205%20-%20Rich%20Display%20System.ipynb#Video), etc) and, the most important, results. I can also easily share things by exporting a notebook as HTML or PDF or uploading it to a place where there's a notebook viewer (you can see an example [here](https://github.com/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/Keras%20Cats%20and%20Dogs%20-%20normal%20deep%20net%20(not%20so%20deep).ipynb)). I've never tested Jupyter with other languages but Python, so I will tell you about my experiences using Python. In the past, Jupyter notebooks used to be called IPython notebooks, therefore it was Python only. However, currently it supports more than 40 programming languages including [Python](https://ipython.org/notebook.html), [R](https://irkernel.github.io/), [Julia](https://github.com/JuliaLang/IJulia.jl), [Ruby](https://github.com/SciRuby/iruby) and [Scala](https://www.scala-lang.org/) (this is the first time I've read about Scala...).
 
 Ok, let's make a list of the things we want to learn here:
+
 - [ ] Launch a Jupyter Notebook server without automatically opening a browser.
 - [ ] Create a SSH tunnel to redirect a local port to the server.
 - [ ] Access your remote server from your browser.
@@ -40,6 +41,7 @@ The command line above has only two things you surely must change: `user` is the
 The only thing you need to do now is launch your browser and access the url `localhost:8888` and done, you have got a remote Jupyter Notebook working!
 
 Recalling the list at the beginning of this post:
+
 - [x] Launch a Jupyter Notebook server without automatically opening a browser.
 - [x] Create a SSH tunnel to redirect a local port to the server.
 - [x] Access your remote server from your browser.
