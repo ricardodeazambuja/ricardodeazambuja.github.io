@@ -25,6 +25,7 @@ Ok, let's make a list of the things we want to learn here:
 Jupyter is capable to serve, just like a [web server](https://en.wikipedia.org/wiki/Web_server), notebooks directly to any browser. They give you full instructions [here](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html). The problem with that solution, in my opinion, is the complexity. If you just carelessly open things, you are going to expose your server :scream:.
 
 To launch the Jupyter Notebook server (on the remote computer) and keep it running after we logout, we will need help from our friend [`nohup`](https://en.wikipedia.org/wiki/Nohup). Nohup allows us to logout without killing the processes our terminal started and the ampersand (`&`) sends `nohup` to the background *freeing* the terminal (in case you want to do something else after launching it...). The [command](http://stackoverflow.com/a/31953548) to launch the notebook without also launching the web browser (even if you are accessing it remotely through `ssh` using the `-X` option to redirect the display, it would be a waste of resources and time):
+
 ```
 $ nohup jupyter notebook --no-browser &
 ```
@@ -33,6 +34,7 @@ $ nohup jupyter notebook --no-browser &
 </div>
 
 After that, you can disconnect from the remote computer, open a terminal on the client computer and type this (more details about the *ssh tunneling magic* can be found [here](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html)):
+
 ```
 $ ssh -nNT -L 9999:localhost:8888 user@example.com
 ```
