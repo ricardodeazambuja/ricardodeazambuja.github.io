@@ -40,7 +40,7 @@ $ ssh -nNT -L 9999:localhost:8888 user@example.com
 ```
 The command line above has only two things you surely must change: `user` is the username at the remote computer and `example.com` will probably be replaced by the remote computer's IP address. Now we have created a tunnel that will redirect the [port](https://en.wikipedia.org/wiki/Port_(computer_networking)) 9999 to the remote server port 8888 (this is the default used by Jupyter). I'm using the port number 9999 because, usually, I also have a local Jupyter Notebook server running at 8888.
 
-The only thing you need to do now is launch your browser and access the url `localhost:8888` and done, you have got a remote Jupyter Notebook working!
+The only thing you need to do now is launch your browser and access the url ~~`localhost:8888`~~ `localhost:9999` and done, you have got a remote Jupyter Notebook working!
 
 Recalling the list at the beginning of this post:
 
