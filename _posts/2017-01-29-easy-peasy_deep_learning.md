@@ -295,6 +295,8 @@ Here are the results from the best neural network (the 97.74% accuracy one) usin
   <figcaption>Testing the Neural Network against images from the test set.</figcaption>
 </figure>
 
+**UPDATE (11/02/2017): I was not normalizing the images before sending them to the network!** I was reading again this post to start the "Part 2" when I realized the outputs were always saturating (1 or 0) and then I noticed the problem with the lack of normalization:sweat_smile:.
+
 And using images never seen before (directory test1):
 <figure>
   <img src="{{ site.url }}/public/images/dog_vs_cat_novel.png?style=centerme" alt="dogs-vs-cats">
