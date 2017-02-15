@@ -314,6 +314,8 @@ As promised, [here](https://github.com/ricardodeazambuja/keras-adventures/blob/m
 
 In the next post, we will see how to convert our simple *deep* neural network to a convolutional neural network. Cheers!
 
+**UPDATE (15/02/2017): Part&nbsp;1&frac12; is available [here]({{ site.url }}/deep_learning/2017/02/12/easy-peasy_deep_learning_one_and_a_half/).**
+
 <!---
 <div class="message">
   This is a draft... yep, I'm learning how to use Jekyll and I do test things on the production website :bowtie:
