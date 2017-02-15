@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-This is the continuation, *Part&nbsp;1&frac12;*, of the ["Easy-peasy Deep Learning and Convolutional Networks with Keras"](http://ricardodeazambuja.com/deep_learning/2017/01/29/easy-peasy_deep_learning/). Do you really need to read [*Part 1*](http://ricardodeazambuja.com/deep_learning/2017/01/29/easy-peasy_deep_learning/) to understand what is going on here? Honestly, probably not, but I would suggest you doing so anyway.
+This is the continuation, *Part&nbsp;1&frac12;*, of the ["Easy-peasy Deep Learning and Convolutional Networks with Keras"]({{ site.url }}/deep_learning/2017/01/29/easy-peasy_deep_learning/). Do you really need to read [*Part 1*]({{ site.url }}/deep_learning/2017/01/29/easy-peasy_deep_learning/) to understand what is going on here? Honestly, probably not, but I would suggest you doing so anyway.
 
 <figure>
   <img src="{{ site.url }}/public/images/output_trained.png?style=centerme" alt="Layers output as images">
