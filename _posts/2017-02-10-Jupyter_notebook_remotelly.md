@@ -33,7 +33,7 @@ $ nohup jupyter notebook --no-browser &
   Caveat: You will only be able to access files (and subdirs) located on the current directory.
 </div>
 
-After that, you can disconnect from the remote computer, open a terminal on the client computer and type this (more details about the *ssh tunneling magic* can be found [here](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html)):
+After that, you can disconnect from the remote computer, open a terminal on the client computer and type this (more details about the *[ssh](https://linux.die.net/man/1/ssh) tunneling magic* can be found [here](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html)):
 
 ```
 $ ssh -nNT -L 9999:localhost:8888 user@example.com
@@ -47,5 +47,27 @@ Recalling the list at the beginning of this post:
 - [x] Launch a Jupyter Notebook server without automatically opening a browser.
 - [x] Create a SSH tunnel to redirect a local port to the server.
 - [x] Access your remote server from your browser.
+
+**Addendum (05/03/2017):**
+
+If you execute the command:
+
+```
+$ ssh -nNT -L 9999:localhost:8888 user@example.com
+```
+
+You will be capable to access the port 8888 from `example.com`, on your local machine, using `localhost:9999`. However, if you want to allow other machines to easily access that port too, it will not be possible. I had this problem last week when I was trying to show some contents on [Pepper's](https://www.ald.softbankrobotics.com/en/cool-robots/pepper) tablet through a web server hosted on a virtual machine. My team from [NAO Hackathon](https://github.com/ricardodeazambuja/Hackathon-Plymouth-2017) was in a hurry and I could not make the redirection work (I should have read the [manual](https://linux.die.net/man/1/ssh):disappointed:). Ok, so there are at least three possible solutions. The first one will work if your computer (the client here) has only one network address:
+
+```
+$ ssh -nNT -L :9999:localhost:8888 user@example.com
+```
+
+If your computer has more than one network adapter, you can *bind* an IP (forcing the tunnel only through the bound IP) using this command (the second possible solution):
+
+```
+$ ssh -nNT -L ip_you_want_to_bind:9999:localhost:8888 user@example.com
+```
+
+The third possibility (*SSH-BASED VIRTUAL PRIVATE NETWORKS*) can be found on the [ssh manual webpage](https://linux.die.net/man/1/ssh) (or, in case you want a more straightforward link, [here](http://superuser.com/a/311863)) and it involves more than one command line (the `-f` argument only sends ssh to background) and you will need to mess with `ifconfig` and `route`. I'm not sure if `route` works the same on all Unix flavours, but apparently it [does](https://en.wikipedia.org/wiki/Route_(command)). I think this last solution is a more robust one when the connection is supposed to be perpetual instead of something to run during some minutes only.
 
 Cheers!
