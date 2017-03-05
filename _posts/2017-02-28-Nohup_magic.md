@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-When you start playing with cloud computing like [Amazon Web Services](https://aws.amazon.com/), you will, sometimes, decide to launch a program that will take a while to run. If you simply close the connection before the all processes are finished, the system will terminate [bash](https://www.gnu.org/software/bash/) (or whatever shell you were using) and, therefore, your program will be also terminated. Normally, when we are working on a terminal, we make use of the `&` (or `ctrl+z` and `bg`) to send things to the background freeing the terminal. If you sent your process to background, you will be able to use [`jobs`](https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/) to display information about processes that are sleeping (the `ctrl+z` thing) or running on the background.
+When you start playing with cloud computing like [Amazon Web Services](https://aws.amazon.com/), you will, sometimes, decide to launch a program that will take a while to run. If you simply close the connection before all processes are finished, the system will terminate [bash](https://www.gnu.org/software/bash/) (or whatever [shell](http://www.freeos.com/guides/lsst/ch01sec07.html) you were using) and, therefore, your program will be also terminated. Normally, when we are working on a terminal, we make use of the `&` (or `ctrl+z` and `bg`) to send things to the background freeing the terminal. If you sent your process to background, you will be able to use [`jobs`](https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/) to display information about processes that are sleeping (the `ctrl+z` thing) or running on the background.
 
 The problem here is that your processes running on the background will be terminated anyway. There are at least two solutions. The simplest one is installing [`nohup`](https://en.wikipedia.org/wiki/Nohup) on your computer (in case it's not already available):
 
@@ -21,6 +21,14 @@ The second option is to manually do what `nohup` does, but using `disown`. This 
 
 ```
 $ disown -h job_number_you_just_found
+```
+
+**Addendum:**
+
+Today (05/03/2017), I was launching some simulations on a server and I decided to do it using `&&` to make sure the next step would only be executed if the previous had finished without errors. The [solution](http://unix.stackexchange.com/questions/47230/how-to-execute-multiple-command-using-nohup), using `nohup`:
+
+```
+$ nohup sh -c 'first_command && second_command' &
 ```
 
 That's it. Have a happy cloud computing experience!
