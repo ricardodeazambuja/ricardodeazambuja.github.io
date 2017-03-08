@@ -9,8 +9,10 @@ tagline:             "Robotics, machine learning, or simply random thoughts!"
 description:         "Here I'm trying to present, in a kind of organised way, the things I'm doing, I've done, I'm planning to do or just dreaming about..."
 url:                 http://ricardodeazambuja.com
 baseurl:             ""
-paginate:            5
+paginate:            10
 comments:            false
+
+excerpt_separator: <!--more-->
 
 # About/contact
 author:

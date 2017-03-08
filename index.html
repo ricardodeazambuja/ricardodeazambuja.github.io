@@ -11,10 +11,21 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
-
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+    {{ post.excerpt }}
+    {% capture content_words %}
+       {{ post.content | number_of_words }}
+     {% endcapture %}
+     {% capture excerpt_words %}
+       {{ post.excerpt | number_of_words }}
+     {% endcapture %}
+     {% if excerpt_words != content_words %}
+     <h3>
+     <a class="" href={{ post.url }} target="_self">
+       Read more...
+     </a>
+     </h3>
+     {% endif %}
   </div>
   {% endfor %}
 </div>
