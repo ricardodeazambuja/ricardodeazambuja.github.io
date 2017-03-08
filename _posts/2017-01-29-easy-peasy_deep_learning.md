@@ -310,7 +310,7 @@ Ok, let's see what we have achieved so far:
 - [ ] Show off by modifying the previous example using a convolutional layer.
 - [x] Enjoy our time because when you work on something you like, it is not work anymore!
 
-As promised, [here](https://github.com/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/Keras%20Cats%20and%20Dogs%20-%20normal%20deep%20net%20(not%20so%20deep).ipynb) you can visualize (or download) a [Jupyter (IPython) notebook](https://ipython.org/notebook.html) with all the source code and something else.
+As promised, [here](http://nbviewer.jupyter.org/github/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/Keras%20Cats%20and%20Dogs%20-%20normal%20deep%20net%20(not%20so%20deep).ipynb) you can visualize (or download) a [Jupyter (IPython) notebook](https://ipython.org/notebook.html) with all the source code and something else.
 
 In the next post, we will see how to convert our simple *deep* neural network to a convolutional neural network. Cheers!
 

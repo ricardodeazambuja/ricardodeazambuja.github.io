@@ -204,7 +204,7 @@ And the output for the randomly initialized one:
   <figcaption>This is what my randomly initialized network outputs, but viewed as RGB images.</figcaption>
 </figure>
 
-I think it's important to recall here the fact that [Keras Dense layer](https://keras.io/layers/core/#dense) is a fully connected one. Consequently, each pixel in the image labeled *First Layer* receives inputs from **ALL** pixels at the original image (the individual pixels are multiplied by a *weight*, summed, added a *bias* and have to pass through the *activation function*) such situation also applies to the *Second Layer* in relation to the *First Layer* and, finally, to the last layer (our classifier) at the end. The operation used here to transform two input matrices (represented by pixel values and weights) into a scalar value (the number added to the bias before passing through the activation function) has a fancy name: [*dot product*](https://en.wikipedia.org/wiki/Dot_product). This will be useful in the future...:grimacing:.
+I think it's important to recall here the fact that [Keras Dense layer](https://keras.io/layers/core/#dense) is a fully connected one. Consequently, each [pixel](https://en.wikipedia.org/wiki/Pixel) in the image labeled *First Layer* receives inputs from **ALL** pixels in the original image (the individual pixels are multiplied by a *weight*, summed, added a *bias* and have to pass through the *activation function*) such situation also applies to the *Second Layer* in relation to the *First Layer* and, finally, to the last layer (our classifier) at the end. The operation used here to transform two input matrices (represented by pixel values and weights) into a scalar value (the number added to the bias before passing through the activation function) has a fancy name: [*dot product*](https://en.wikipedia.org/wiki/Dot_product). This will be useful in the future...:grimacing:.
 
 
 Last, but not least: can you see patterns for dogs or cats in the First or Second Layers? I can't :satisfied:.
@@ -221,7 +221,7 @@ I hope, by now, we can tick the boxes below:
 - [x] Access internal layer outputs using Keras.
 - [x] Visualize the internal layer outputs as if they where images.
 
-As promised, [here](https://github.com/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/Keras%20Cats%20and%20Dogs%20-%20normal%20deep%20net%20(not%20so%20deep)%20-%20visualization.ipynb) you can visualize (or download) a [Jupyter (IPython) notebook](https://ipython.org/notebook.html) with all the source code and something else :wink:.
+As promised, [here](http://nbviewer.jupyter.org/github/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/Keras%20Cats%20and%20Dogs%20-%20normal%20deep%20net%20(not%20so%20deep)%20-%20visualization.ipynb) you can visualize (or download) a [Jupyter (IPython) notebook](https://ipython.org/notebook.html) with all the source code and something else :wink:.
 
 In the next post, we ~~will~~ are going to see how to convert our simple *deep* neural network to a convolutional neural network. Cheers!
 
