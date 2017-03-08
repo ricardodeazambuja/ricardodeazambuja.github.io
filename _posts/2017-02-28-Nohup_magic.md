@@ -9,6 +9,8 @@ comments: true
 
 When you start playing with cloud computing like [Amazon Web Services](https://aws.amazon.com/), you will, sometimes, decide to launch a program that will take a while to run. If you simply close the connection before all processes are finished, the system will terminate [bash](https://www.gnu.org/software/bash/) (or whatever [shell](http://www.freeos.com/guides/lsst/ch01sec07.html) you were using) and, therefore, your program will be also terminated. Normally, when we are working on a terminal, we make use of the `&` (or `ctrl+z` and `bg`) to send things to the background freeing the terminal. If you sent your process to background, you will be able to use [`jobs`](https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/) to display information about processes that are sleeping (the `ctrl+z` thing) or running on the background.
 
+<!--more-->
+
 The problem here is that your processes running on the background will be terminated anyway. There are at least two solutions. The simplest one is installing [`nohup`](https://en.wikipedia.org/wiki/Nohup) on your computer (in case it's not already available):
 
 ```

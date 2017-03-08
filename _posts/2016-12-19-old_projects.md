@@ -14,6 +14,8 @@ During my years as an undergrad Electrical Engineering student, I've developed s
   <figcaption>DARVIT - 8051 based home automation system.</figcaption>
 </figure>
 
+<!--more-->
+
 Luckily, my final project was preserved (thanks to the aforementioned noisy mobile camera and better backup systems) and I've managed to upload it to github too ([TEXVID](https://github.com/ricardodeazambuja/TEXvid)). It was based on the Microchip PIC16F and entirely written in Assembly! It was a very simple system capable of showing messages using a TV with composite video input.  
 <figure>
   <img src="{{ site.url }}/public/images/texvid_working.jpeg?style=centerme" alt="TEXVID">
