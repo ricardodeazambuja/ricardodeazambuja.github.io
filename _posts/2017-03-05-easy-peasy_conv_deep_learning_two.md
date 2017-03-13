@@ -234,7 +234,7 @@ Lastly, let's see what we have achieved:
 - [ ] Get a job on Facebook... ok, we will need a lot more to impress [Monsieur Lecun](http://yann.lecun.com/), but this is a starting point :bowtie:.
 - [x] And, finally, enjoy our time while doing all the above things!
 
-I almost forgetting, we can tick this box from the first [post]({{ site.url }}/deep_learning/2017/01/29/easy-peasy_deep_learning/):
+I was almost forgetting, we can tick this box from the first [post]({{ site.url }}/deep_learning/2017/01/29/easy-peasy_deep_learning/):
 
 - [x] Show off by modifying the previous example using a convolutional layer.
 
