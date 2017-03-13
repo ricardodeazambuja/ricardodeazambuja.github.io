@@ -122,7 +122,7 @@ model.add(MaxPooling2D(pool_size=pool_size,
 
 Since this *easy-peasy&reg;* series was not designed to beat benchmarks, but mainly to learn and understand what is happening, I will add one more set of convolutional and pooling layers. Moreover, I will reduce the number of filters from 32 to 8. I really want to see changes on the internal weights, even if this generates overfitting, thus I've increased the epochs to 1000. Apart from the things I've explained here so far, everything else will be kept the same as the [Part 1]({{ site.url }}/deep_learning/2017/01/29/easy-peasy_deep_learning/) and [Part&nbsp;1&frac12;]({{ site.url }}/deep_learning/2017/01/29/easy-peasy_deep_learning/) posts.
 
-Testing our new CNN against the test set (the 25% randomly chosen images from the directory train) returned us a accuracy of... 97%! You can find the saved model [here](https://github.com/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/my_97my_convnet_SDG.h5?raw=true).
+Testing our new CNN against the test set (the 25% randomly chosen images from the directory train) returned us a accuracy of... 97%! You can find the saved model [here](https://github.com/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/my_convnet_SDG.h5?raw=true).
 
 <figure>
   <img src="{{ site.url }}/public/images/dog_vs_cat_conv_test_set.png?style=centerme" alt="dogs-vs-cats">
