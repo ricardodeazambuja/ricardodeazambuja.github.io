@@ -25,9 +25,9 @@ The second option is to manually do what `nohup` does, but using `disown`. This 
 $ disown -h job_number_you_just_found
 ```
 
-**Addendum:**
+**UPDATE (05/03/2017):**
 
-Today (05/03/2017), I was launching some simulations on a server and I decided to do it using `&&` to make sure the next step would only be executed if the previous had finished without errors. The [solution](http://unix.stackexchange.com/questions/47230/how-to-execute-multiple-command-using-nohup), using `nohup`:
+Today, I was launching some simulations on a server and I decided to do it using `&&` to make sure the next step would only be executed if the previous had finished without errors. The [solution](http://unix.stackexchange.com/questions/47230/how-to-execute-multiple-command-using-nohup), using `nohup`:
 
 ```
 $ nohup sh -c 'first_command && second_command' &

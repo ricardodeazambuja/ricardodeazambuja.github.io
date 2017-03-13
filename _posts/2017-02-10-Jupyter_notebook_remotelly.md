@@ -50,7 +50,7 @@ Recalling the list at the beginning of this post:
 - [x] Create a SSH tunnel to redirect a local port to the server.
 - [x] Access your remote server from your browser.
 
-**Addendum (05/03/2017):**
+**UPDATE (05/03/2017):**
 
 If you execute the command:
 
@@ -72,7 +72,7 @@ $ ssh -nNT -L ip_you_want_to_bind:9999:localhost:8888 user@example.com
 
 The third possibility (*SSH-BASED VIRTUAL PRIVATE NETWORKS*) can be found on the [ssh manual webpage](https://linux.die.net/man/1/ssh) (or, in case you want a more straightforward link, [here](http://superuser.com/a/311863)) and it involves more than one command line (the `-f` argument only sends ssh to background) and you will need to mess with `ifconfig` and `route`. I'm not sure if `route` works the same on all Unix flavours, but apparently it [does](https://en.wikipedia.org/wiki/Route_(command)). I think this last solution is a more robust one when the connection is supposed to be perpetual instead of something to run during some minutes only.
 
-**Addendum (11/03/2017):**
+**UPDATE (11/03/2017):**
 
 When you redirect the port using the commands I've presented above, you must call `%matplotlib inline` if you want to generate plots or you will also need to redirect the display, but this may not be available if the external server doesn't have a screen (ok, you could use [this](http://askubuntu.com/a/633805)). `ssh` is full of useful [tricks](http://matt.might.net/articles/ssh-hacks/) :wink:.
 

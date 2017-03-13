@@ -9,6 +9,11 @@ comments: true
 
 [Deep learning](https://en.wikipedia.org/wiki/Deep_learning)... wow... this is "the" [hot topic](http://fortune.com/ai-artificial-intelligence-deep-machine-learning/) since, at least, some good years ago! I've attended a few seminars and workshops about deep learning, nevertheless I've never tried to code something myself - until now! - because I had always another [priority](http://www.tastefullyoffensive.com/2013/09/the-12-types-of-procrastnators.html). Also, I have to admit, I thought it was a lot harder and it would need much more time to be able to run anything that was not simply a sample code.
 
+<figure>
+  <img src="{{ site.url }}/public/images/dog_vs_cat_test_set_start.png?style=centerme" alt="Classification of Dogs and Cats">
+  <figcaption>Example of classification results.</figcaption>
+</figure>
+
 I'm always forgetting things, so I like to take notes as if I was teaching a toddler. Consequently, this post was designed to remember myself when I forget how to use Keras :expressionless:.
 
 All the things I'll explain below will only make sense if you know what is a [Multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron) and [Feedforward neural network](https://en.wikipedia.org/wiki/Feedforward_neural_network) as well. In case you don't, no worries, Google is your friend :stuck_out_tongue_winking_eye:.
@@ -292,12 +297,13 @@ After all our hard work, you should save your model. Keras models have methods f
 And then I decided to fiddle with the parameters using the SDG optimizer. What did I do? I simply changed `nb_epoch=20` and, *voilà*, the accuracy went up to... 97.74%! You can find the saved model [here](https://github.com/ricardodeazambuja/keras-adventures/blob/master/Dogs_vs_Cats/my_97perc_acc.h5?raw=true). But, gosh, why was it so good now? In order to try to understand what happened, we must go back to where we defined our neural network. For the first two layers, we added this argument: `init="uniform"`. Therefore, those layers had their weights randomly assigned ([uniform distribution](https://en.wikipedia.org/wiki/Uniform_distribution_(continuous))). A further reason could be some **crazy**  [overfitting](https://en.wikipedia.org/wiki/Overfitting) situation because the number of epochs were reduced from 50 to 20 and overfitting would usually occur when you train for too long. In the future, I will try to fight overfitting using the [dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) technique [already available in Keras](https://keras.io/layers/core/#dropout).
 
 Here are the results from the best neural network (the 97.74% accuracy one) using images from the test set (the 25% randomly chosen images from the directory train):
+
 <figure>
   <img src="{{ site.url }}/public/images/dog_vs_cat_test_set.png?style=centerme" alt="dogs-vs-cats">
   <figcaption>Testing the Neural Network against images from the test set.</figcaption>
 </figure>
 
-**UPDATE (11/02/2017): I was not normalizing the images before sending them to the network!** I was reading again this post to start the "Part 2" when I realized the outputs were always saturating (1 or 0) and then I noticed the problem with the lack of normalization:sweat_smile:.
+**UPDATE (11/02/2017): I was not normalizing the images before sending them to the network!** I was reading again this post to start the [*Part&nbsp;1&frac12;*]({{ site.url }}/deep_learning/2017/01/29/easy-peasy_deep_learning_one_and_a_half/) when I realized the outputs were always saturating (1 or 0) and then I noticed the problem with the lack of normalization:sweat_smile:.
 
 And using images never seen before (directory test1):
 <figure>
