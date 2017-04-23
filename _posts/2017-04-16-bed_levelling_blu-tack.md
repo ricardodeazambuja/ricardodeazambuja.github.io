@@ -86,3 +86,6 @@ Despite that, my printer was still not properly leveled because the range of pos
 And everything worked fine at the end because I was able to calibrate the 3D printer using my current best-loved hacking accessory: Blu-Tack :kissing_heart:.
 
 Cheers!
+
+**UPDATE (23/04/2017):**  
+I created a [G-CODE file]({{ site.url }}/public/extras/0_bed_levelling.gcode) to *automate* the manual bed leveling a little bit. It is working with Marlin firmware (1.1.0 RC8) and you just need to *print* that file (pressing the button to advance each step) to position the nozzle helping you to adjust the bed. However, I have no idea which side effects it could have in a printer different from mine, so **use it at your own risk** and change it (any text editor with a *pure soul*) according to your taste!
