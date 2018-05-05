@@ -58,7 +58,7 @@ A new dockerfile (*New_Dockerfile*) will be used here to add the script (`COPY a
 ```
 FROM tensorflow/tensorflow:latest-gpu-py3
 RUN apt-get -y update
-# necessary to make launch_user.sh work
+# necessary to make add_user.sh work
 RUN apt-get install -y --fix-missing sudo
 # stuff opencv complains if they are not installed
 RUN apt-get install -y --fix-missing \ 
@@ -128,7 +128,12 @@ alias ai_docker='docker run --rm -it --runtime=nvidia -p 8888:8888 --user $UID:$
 Voilà, c'est vivant! (bear in mind I’m currently living in [Montréal](http://www.montrealinternational.com/en/news/2017/11/montreal-is-2nd-global-artificial-intelligence-hub/) and I’m trying to learn French)
 
 
+<figure>
+  <img src="{{ site.url }}/public/images/webcam_working.png?style=centerme" alt="OpenCV capturing image directly from my webcam">
+  <figcaption>The result: image capture from my webcam, presented on an external window in real time, using a jupyter notebook with OpenCV running from my Tensorflow docker image.</figcaption>
+</figure>
 
-Finally I have a docker image that has *everything* I need and follows docker philosophy of being a clean slate. Now it’s time to test Tensorflow… but I will leave this for the next post :grimacing:. 
+
+Finally I have a docker image that has *everything* I need and follows docker philosophy of being a clean slate when you create a new container. Now it’s time to test Tensorflow… but I will leave this for the next post because this one was way too long :grimacing:. 
 
 Cheers!

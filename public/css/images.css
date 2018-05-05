@@ -10,7 +10,7 @@ img[src$="centerme"] {
   margin: 0;
   border-radius: 0;
   padding:0;
-  margin-bottom: 3px;
+  margin-bottom: 0px; /* the problem is gone, so I'm changing from 3px to 0px */
 }
 
 figure {
