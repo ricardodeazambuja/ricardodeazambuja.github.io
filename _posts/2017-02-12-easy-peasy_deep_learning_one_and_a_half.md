@@ -18,7 +18,7 @@ This is the continuation, *Part&nbsp;1&frac12;*, of the ["Easy-peasy Deep Learni
 
 Before we start, let me just tell you a little bit about [myself]({{ site.baseurl }}/about/#me), as if you care...:stuck_out_tongue_winking_eye:. Am I writing these posts to give something back to the community? Yes, this is the **main** reason, but I'm doing this as well because when you try to explain, or teach, something, you actually learn a lot more than just passively studying and, I would dare say, it's even more efficient than when you are *just* applying your knowledge to solve a real problem. So, this is not simply an [altruistic](https://en.wikipedia.org/wiki/Altruism) thing. However, if everybody starts behaving like this, it will naturally help all the *players*, therefore it's a very very nice win-win situation in my humble opinion:bowtie:.
 
-When I started writing the *Part 2* post, I thought I knew *a lot* about deep learning convolutional networks, although, [*lentement*](http://www.wordreference.com/fren/lentement), I realized there were lots and lots of things I need to understand better. That was the reason why, actually, I decided to go back to the [initial model](http://ricardodeazambuja.com/deep_learning/2017/01/29/easy-peasy_deep_learning/) and write a *Part&nbsp;1&frac12;* post. To understand why convolutional layers are cool, we need to see what is happening after each layer and this can be done with Keras [Dense](https://keras.io/layers/core/#dense) layers too.
+When I started writing the *Part 2* post, I thought I knew *a lot* about deep learning convolutional networks, although, [*lentement*](http://www.wordreference.com/fren/lentement), I realized there were lots and lots of things I need to understand better. That was the reason why, actually, I decided to go back to the [initial model](https://ricardodeazambuja.com/deep_learning/2017/01/29/easy-peasy_deep_learning/) and write a *Part&nbsp;1&frac12;* post. To understand why convolutional layers are cool, we need to see what is happening after each layer and this can be done with Keras [Dense](https://keras.io/layers/core/#dense) layers too.
 
 I'm trying to keep using this *outcomes methodology*, so here it comes. By the end of this post...
 
@@ -28,7 +28,7 @@ I'm trying to keep using this *outcomes methodology*, so here it comes. By the e
 - [ ] Visualize the internal layer outputs as if they where images.
 
 
-[The first post](http://ricardodeazambuja.com/deep_learning/2017/01/29/easy-peasy_deep_learning/) was based on a [Feedforward Neural Network](https://en.wikipedia.org/wiki/Feedforward_neural_network) and the images where rescaled (downsampling) and flattened (transformed into 1D arrays) using this bit of Python code:
+[The first post](https://ricardodeazambuja.com/deep_learning/2017/01/29/easy-peasy_deep_learning/) was based on a [Feedforward Neural Network](https://en.wikipedia.org/wiki/Feedforward_neural_network) and the images where rescaled (downsampling) and flattened (transformed into 1D arrays) using this bit of Python code:
 
  ```python
  image = scipy.misc.imread(imagePath)

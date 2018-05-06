@@ -7,7 +7,7 @@ permalink:           pretty
 title:               Ricardo's Place
 tagline:             "Robotics, machine learning, or simply random thoughts!"
 description:         "Here I'm trying to present, in a kind of organised way, the things I'm doing, I've done, I'm planning to do or just dreaming about..."
-url:                 http://ricardodeazambuja.com
+url:                 https://ricardodeazambuja.com
 baseurl:             ""
 paginate:            10
 comments:            false
@@ -17,7 +17,7 @@ excerpt_separator: <!--more-->
 # About/contact
 author:
   name:              Ricardo de Azambuja
-  url:               http://ricardodeazambuja.com
+  url:               https://ricardodeazambuja.com
   email:             ricardo.azambuja@gmail.com
 
 #
