@@ -75,7 +75,7 @@ predictions = sess.run(softmax_tensor,
                         {'DecodeJpeg/contents:0': image_data})
 ```
 
-Here, instead of Tensorboard, I verified the node names by just printing the information about the Inception V3 nodes using a for loop:
+Here, instead of Tensorboard, I verified the [node names](https://www.tensorflow.org/extend/tool_developers/#nodes) by just printing the information about the Inception V3 nodes using a for loop:
 
 ```python
 for node in graph_def.node:
