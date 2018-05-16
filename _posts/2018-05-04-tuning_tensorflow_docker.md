@@ -137,3 +137,5 @@ Voilà, c'est vivant! (bear in mind I’m currently living in [Montréal](http:/
 Finally I have a docker image that has *everything* I need and follows docker philosophy of being a clean slate when you create a new container. Now it’s time to test Tensorflow… but I will leave this for the next post because this one was way too long :grimacing:. 
 
 Cheers!
+
+**UPDATE (16/05/2018): A post testing the docker container using Tensorflow can be found [here]({{ site.url }}/deep_learning/2018/05/12/testing-tensorflow-docker/).**
