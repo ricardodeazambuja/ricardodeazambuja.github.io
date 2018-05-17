@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Testing my new Tensorflow / OpenCV / etc. docker image
+title: Testing my new TensorFlow / OpenCV / etc. docker image
 category: deep_learning
 draft: false
 published: true
 comments: true
 ---
 
-My [last post]({{ site.url }}/deep_learning/2018/05/04/tuning_tensorflow_docker/) was all about creating a [Tensorflow](https://www.tensorflow.org/) [docker image](https://docs.docker.com/engine/reference/commandline/images/) that would work with [OpenCV](https://opencv.org/), inside a [Jupyter notebook](http://jupyter.org/), creating external windows, accessing the webcam, saving things using the current user from host, etc. All that hard work had a reason: use the newest version of Tensorflow for computer vision. So, let’s try it!  
+My [last post]({{ site.url }}/deep_learning/2018/05/04/tuning_tensorflow_docker/) was all about creating a [TensorFlow](https://www.tensorflow.org/) [docker image](https://docs.docker.com/engine/reference/commandline/images/) that would work with [OpenCV](https://opencv.org/), inside a [Jupyter notebook](http://jupyter.org/), creating external windows, accessing the webcam, saving things using the current user from host, etc. All that hard work had a reason: use the newest version of TensorFlow for computer vision. So, let’s try it!  
 
 <figure>
-  <img src="{{ site.url }}/public/images/tensorflow_test.png?style=centerme" alt="First results from my Tensorflow docker image">
+  <img src="{{ site.url }}/public/images/tensorflow_test.png?style=centerme" alt="First results from my TensorFlow docker image">
   <figcaption>Without the hat and the measuring tape, it was 0.9 for <i>mask</i> :disappointed_relieved:.</figcaption>
 </figure>
 <!--more-->
 
-To test the docker image, I decided to try something simple to make my life easier if I get attacked by [bugs](http://villains.wikia.com/wiki/Cy-Bugs). Google suggested me the [official Tensorflow tutorials](https://www.tensorflow.org/tutorials/image_recognition) on image recognition, and I embraced the idea. I must admit, documentation is not the biggest strengh of Tensorflow. Google has been releasing new versions of Tensorflow super fast (current version is 1.8 and, according to github, since November 9, 2015 it had 58 releases!), therefore there are many ways to do the same thing and the documentation is not always updated to the last method. Also, it's easy to find many examples in the oficial documentation where they apply functions or methods that currently print messages saying they are deprecated! At first, I wanted to use some code together with [Tensorboard](https://www.youtube.com/watch?v=eBbEDRsCmv4) for this post, but I gave up because after watching the presentations from the [TensorFlow Dev Summit 2018](https://www.youtube.com/watch?v=RUougpQ6cMo&list=PLQY2H8rRoyvxjVx3zfw4vA4cvlKogyLNN) I got really confused about which one is the *latest* recommended way to use Tensorboard.
+To test the docker image, I decided to try something simple to make my life easier if I get attacked by [bugs](http://villains.wikia.com/wiki/Cy-Bugs). Google suggested me the [official TensorFlow tutorials](https://www.tensorflow.org/tutorials/image_recognition) on image recognition, and I embraced the idea. I must admit, documentation is not the biggest strengh of TensorFlow. Google has been releasing new versions of TensorFlow super fast (current version is 1.8 and, according to github, since November 9, 2015 it had 58 releases!), therefore there are many ways to do the same thing and the documentation is not always updated to the last method. Also, it's easy to find many examples in the oficial documentation where they apply functions or methods that currently print messages saying they are deprecated! At first, I wanted to use some code together with [Tensorboard](https://www.youtube.com/watch?v=eBbEDRsCmv4) for this post, but I gave up because after watching the presentations from the [TensorFlow Dev Summit 2018](https://www.youtube.com/watch?v=RUougpQ6cMo&list=PLQY2H8rRoyvxjVx3zfw4vA4cvlKogyLNN) I got really confused about which one is the *latest* recommended way to use Tensorboard.
 
-I have no idea since when, but Tensorflow has a special [repository with <s>pre-trained</s> models implemented in Tensorflow](https://github.com/tensorflow/models) (actually, the repo has *links* to the pre-trained models because github doesn't allow huge files anyway) and, following the tutorial I mentioned earlier, I will use an [Inception V3 (2015)](https://arxiv.org/abs/1512.00567) for my tests. Therefore, the first step is to clone the repo:
+I have no idea since when, but TensorFlow has a special [repository with <s>pre-trained</s> models implemented in TensorFlow](https://github.com/tensorflow/models) (actually, the repo has *links* to the pre-trained models because github doesn't allow huge files anyway) and, following the tutorial I mentioned earlier, I will use an [Inception V3 (2015)](https://arxiv.org/abs/1512.00567) for my tests. Therefore, the first step is to clone the repo:
 
 ```
 $ git clone https://github.com/tensorflow/models
@@ -58,7 +58,7 @@ Remembering when I used to be a [Windows](https://en.wikipedia.org/wiki/Windows_
 My solution was to commit the current container to my docker image. It was as simple as executing the command below (`objective_darwin` was the funny container's name running at that moment) on a different terminal:
 
 ```
-$ docker commit -m "Fix the slow start of first session on Tensorflow" objective_darwin tensorflow_gpu_py3_ready:latest
+$ docker commit -m "Fix the slow start of first session on TensorFlow" objective_darwin tensorflow_gpu_py3_ready:latest
 ```
 
 It could also be automated by inserting this line into the dockerfile used to create the docker image:
@@ -66,7 +66,7 @@ It could also be automated by inserting this line into the dockerfile used to cr
 RUN ["python3", "-c", "'import tensorflow as tf; s=tf.Session()'"]
 ```
 
-The original Tensorflow Inception V3 model was created for reading directly from a file using a [DecodeJpeg](https://www.tensorflow.org/api_docs/cc/class/tensorflow/ops/decode-jpeg) *op* (one can also see it as a fancy node in your [dataflow graph](https://www.tensorflow.org/programmers_guide/graphs)). By using special nodes like that, Tensorflow can load *stuff* in an optimal way from disk speeding up things when you need to train your beast. The original script was:
+The original TensorFlow Inception V3 model was created for reading directly from a file using a [DecodeJpeg](https://www.tensorflow.org/api_docs/cc/class/tensorflow/ops/decode-jpeg) *op* (one can also see it as a fancy node in your [dataflow graph](https://www.tensorflow.org/programmers_guide/graphs)). By using special nodes like that, TensorFlow can load *stuff* in an optimal way from disk speeding up things when you need to train your beast. The original script was:
 
 ```python
 softmax_tensor = sess.graph.get_tensor_by_name('softmax:0')

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Tensorflow docker image to rule them all
+title: A TensorFlow docker image to rule them all
 category: deep_learning
 draft: false
 published: true
@@ -8,10 +8,10 @@ comments: true
 ---
 
 <figure>
-  <img src="{{ site.url }}/public/images/tensorflow_tuning.png?style=centerme" alt="Tensorflow+OpenCV+Access to local HD+docker">
+  <img src="{{ site.url }}/public/images/tensorflow_tuning.png?style=centerme" alt="TensorFlow+OpenCV+Access to local HD+docker">
 </figure>
 <!--more-->
-Today I'm in need to develop an algorithm to segment some special *stuff* on an image and my old Tensorflow docker image is… too old to invest time on it. So I decided to pull a new Docker image for the latest Tensorflow with GPU enabled and Python 3 ([2020-01-01 is Python 2 end-of-life](https://devguide.python.org/#status-of-python-branches)). The image of my choice was [tensorflow/tensorflow:1.8.0-gpu-py3](https://hub.docker.com/r/tensorflow/tensorflow/). Pulling that image was as easy as typing:
+Today I'm in need to develop an algorithm to segment some special *stuff* on an image and my old TensorFlow docker image is… too old to invest time on it. So I decided to pull a new Docker image for the latest TensorFlow with GPU enabled and Python 3 ([2020-01-01 is Python 2 end-of-life](https://devguide.python.org/#status-of-python-branches)). The image of my choice was [tensorflow/tensorflow:1.8.0-gpu-py3](https://hub.docker.com/r/tensorflow/tensorflow/). Pulling that image was as easy as typing:
 ```
 $ docker pull tensorflow/tensorflow:latest-gpu-py3
 ```
@@ -79,7 +79,7 @@ ENTRYPOINT ["/add_user.sh"]
 
 Now, to create the image, the following command must be executed on the same directory where *add_user.sh* and the dockerfile *New_Dockerfile* are located:
 ```
-$ docker build -t tensorflow/tensorflow:latest-gpu-py3 -f New_Dockerfile .
+$ docker build -t tensorflow_gpu_py3_ready -f New_Dockerfile .
 ```
 
 The command necessary to create/run the container is very very long, so I suggest the creation of an alias inside [`~/.bashrc`](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html) using the command below:
@@ -130,12 +130,16 @@ Voilà, c'est vivant! (bear in mind I’m currently living in [Montréal](http:/
 
 <figure>
   <img src="{{ site.url }}/public/images/webcam_working.png?style=centerme" alt="OpenCV capturing image directly from my webcam">
-  <figcaption>The result: image capture from my webcam, presented on an external window in real time, using a jupyter notebook with OpenCV running from my Tensorflow docker image.</figcaption>
+  <figcaption>The result: image capture from my webcam, presented on an external window in real time, using a jupyter notebook with OpenCV running from my TensorFlow docker image.</figcaption>
 </figure>
 
 
-Finally I have a docker image that has *everything* I need and follows docker philosophy of being a clean slate when you create a new container. Now it’s time to test Tensorflow… but I will leave this for the next post because this one was way too long :grimacing:. 
+Finally I have a docker image that has *everything* I need and follows docker philosophy of being a clean slate when you create a new container. Now it’s time to test TensorFlow… but I will leave this for the next post because this one was way too long :grimacing:. 
 
 Cheers!
 
-**UPDATE (16/05/2018): A post testing the docker container using Tensorflow can be found [here]({{ site.url }}/deep_learning/2018/05/12/testing-tensorflow-docker/).**
+**UPDATE (16/05/2018): A post testing the docker container using TensorFlow can be found [here]({{ site.url }}/deep_learning/2018/05/12/testing-tensorflow-docker/).**
+
+
+**UPDATE (17/05/2018): The command to build the image had a typo. Now it's correct:**  
+`$ docker build -t tensorflow_gpu_py3_ready -f New_Dockerfile .`
