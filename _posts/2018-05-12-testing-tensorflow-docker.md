@@ -61,10 +61,21 @@ My solution was to commit the current container to my docker image. It was as si
 $ docker commit -m "Fix the slow start of first session on TensorFlow" objective_darwin tensorflow_gpu_py3_ready:latest
 ```
 
-It could also be automated by inserting this line into the dockerfile used to create the docker image:
+It could also be automated by inserting the line below into the dockerfile used to create the docker image:
 ```
-RUN ["python3", "-c", "'import tensorflow as tf; s=tf.Session()'"]
+RUN python3 -c 'import tensorflow as tf; s=tf.Session()'
 ```
+
+But it will not work, unless you first stop the docker daemon:
+```
+sudo service docker stop
+```
+
+And relaunch it using [a special option to enable the gpu](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#can-i-use-the-gpu-during-a-container-build-ie-docker-build):
+```
+sudo dockerd --default-runtime=nvidia
+```
+
 
 The original TensorFlow Inception V3 model was created for reading directly from a file using a [DecodeJpeg](https://www.tensorflow.org/api_docs/cc/class/tensorflow/ops/decode-jpeg) *op* (one can also see it as a fancy node in your [dataflow graph](https://www.tensorflow.org/programmers_guide/graphs)). By using special nodes like that, TensorFlow can load *stuff* in an optimal way from disk speeding up things when you need to train your beast. The original script was:
 
@@ -154,3 +165,5 @@ And, as promised, here is the full notebook :wink:.
 <script src="https://gist.github.com/ricardodeazambuja/60787de1dd2d0e9725cc501084eb8f82.js"></script>
 
 Cheers!
+
+**UPDATE (17/05/2018): The line I suggested adding to the dockerfile was not working because, by default, the docker daemon doesn't use the nvidia runtime, therefore no gpu was available to run TensorFlow. The weird thing, still in need of an explanation, is why the command `RUN ["python3", "-c", "'import tensorflow as tf; s=tf.Session()'"]` was not raising an error and I could only see the gpu error when I changed it.**
