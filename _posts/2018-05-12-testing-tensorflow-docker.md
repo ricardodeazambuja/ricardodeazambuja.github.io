@@ -66,7 +66,12 @@ It could also be automated by inserting the line below into the dockerfile used 
 RUN python3 -c 'import tensorflow as tf; s=tf.Session()'
 ```
 
-But it will not work, unless you first stop the docker daemon:
+But it will not work because the gpu is not available by default! Before you build it using: 
+```
+docker build -t tensorflow_gpu_py3_ready -f New_Dockerfile .
+```
+
+You must first stop the docker daemon:
 ```
 sudo service docker stop
 ```
@@ -76,6 +81,10 @@ And relaunch it using [a special option to enable the gpu](https://github.com/NV
 sudo dockerd --default-runtime=nvidia
 ```
 
+After that, you can kill the command above and start the service again:
+```
+sudo service docker start
+```
 
 The original TensorFlow Inception V3 model was created for reading directly from a file using a [DecodeJpeg](https://www.tensorflow.org/api_docs/cc/class/tensorflow/ops/decode-jpeg) *op* (one can also see it as a fancy node in your [dataflow graph](https://www.tensorflow.org/programmers_guide/graphs)). By using special nodes like that, TensorFlow can load *stuff* in an optimal way from disk speeding up things when you need to train your beast. The original script was:
 
