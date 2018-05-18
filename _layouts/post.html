@@ -21,7 +21,7 @@ comments: true
     {% for category in site.categories %}
       {% if category[0] == page.category %}
         {% for posts in category %}
-          {% for post in posts limit:3 %}
+          {% for post in posts limit:10 %}
             <li>
               <h3>
               <a class="" href={{ post.url }} target="_self">
