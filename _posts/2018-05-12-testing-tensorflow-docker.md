@@ -176,3 +176,4 @@ And, as promised, here is the full notebook :wink:.
 Cheers!
 
 **UPDATE (17/05/2018): The line I suggested adding to the dockerfile was not working because, by default, the docker daemon doesn't use the nvidia runtime, therefore no gpu was available to run TensorFlow. The weird thing, still in need of an explanation, is why the command `RUN ["python3", "-c", "'import tensorflow as tf; s=tf.Session()'"]` was not raising an error and I could only see the gpu error when I changed it.**
+**UPDATE (18/05/2018): The reason I [found](https://docs.docker.com/engine/reference/builder/#run) is that `RUN ["python3", "-c", "'import tensorflow as tf; s=tf.Session()'"]` uses [exec](https://linux.die.net/man/3/exec) and it seems to hide some errors that are internal to the program executed. E.g: `ls -0` shows `ls: invalid option -- '0'`, but `exec ls -0` hides it from the user.**
