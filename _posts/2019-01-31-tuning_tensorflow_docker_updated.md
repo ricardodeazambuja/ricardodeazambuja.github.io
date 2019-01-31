@@ -54,7 +54,7 @@ docker pull ricardodeazambuja/tensorflow_gpu_py3_opencv_dlib_jupyter:tf119-cuda9
 
 As long as I understood, thanks to the evolution of Docker (I'm using version 18.09.1 currently), this new image doesn't need some of the hacks from [my last one](https://ricardodeazambuja.com/deep_learning/2018/05/04/tuning_tensorflow_docker).
 
-The Dockerfile I created is far from optimized. I added everything I thought it could be useful and the final image became quite big. I really don't care whether it is 1 or 5GB. If you do, you can modify it to the bare necessity by changing my [Dockerfile](https://gist.github.com/ricardodeazambuja/bdd59d9e2e9bae67313c8f6bd3da76a8).
+The Dockerfile I created is far from optimized. I added everything I thought it could be useful and the final image became quite big. I really don't care whether it is 1 or 5GB. If you do, you can modify it to your [*bear necessities*](https://www.youtube.com/watch?v=c6e3ITsjLRI) by changing my [Dockerfile](https://gist.github.com/ricardodeazambuja/bdd59d9e2e9bae67313c8f6bd3da76a8).
 
 When you run the image, it will show you something like this:
 ```
