@@ -143,3 +143,5 @@ Cheers!
 
 **UPDATE (17/05/2018): The command to build the image had a typo. Now it's correct:**  
 `$ docker build -t tensorflow_gpu_py3_ready -f New_Dockerfile .`
+
+**UPDATE (31/01/2019): [New post with an UPDATED image is available!](http://localhost:4000/deep_learning/2019/01/31/tuning_tensorflow_docker_updated/)** 
