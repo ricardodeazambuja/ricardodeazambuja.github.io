@@ -179,4 +179,4 @@ Cheers!
 
 **UPDATE (18/05/2018): The reason I [found](https://docs.docker.com/engine/reference/builder/#run) is that `RUN ["python3", "-c", "'import tensorflow as tf; s=tf.Session()'"]` uses [exec](https://linux.die.net/man/3/exec) and it seems to hide some errors that are internal to the program executed. E.g: `ls -0` shows `ls: invalid option -- '0'`, but `exec ls -0` hides it from the user.**
 
-**UPDATE (31/01/2019): [New post with an UPDATED image is available!](http://localhost:4000/deep_learning/2019/01/31/tuning_tensorflow_docker_updated/)** 
+**UPDATE (31/01/2019): [New post with an UPDATED image is available!]({{ site.url }}/deep_learning/2019/01/31/tuning_tensorflow_docker_updated/)** 
