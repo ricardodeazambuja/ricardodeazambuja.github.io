@@ -12,6 +12,9 @@ baseurl:             ""
 paginate:            10
 comments:            false
 
+# it will make life easier when using jekyll serve
+host:               localhost
+
 excerpt_separator: <!--more-->
 
 # About/contact
@@ -28,8 +31,12 @@ collections:
   pages:
     output: true
     permalink: /:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
 
 include: ['_pages']
+include: ['_projects']
 
 # Custom vars
 version:             0.0.0.alpha.0
