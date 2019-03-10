@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Direct access your webcam and microphone inside Google Colab notebook
+title: Direct access to your webcam and microphone inside Google Colab notebook
 category: deep_learning
 draft: true
 published: true
