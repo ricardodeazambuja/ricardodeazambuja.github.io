@@ -9,7 +9,7 @@ comments: true
 
 Ok, this is a straight to the point post! In previous posts I explained how to save an image directly from your webcam. However, that method was using [OpenCV](https://opencv.org/) and it can only access hardware connected to the host (where the [Jupyter notebook](https://jupyter.org/) server is running). One classic example where you can't access a webcam directly is [Google Colaboratory](https://colab.research.google.com/). As I said at the beginning, you can only access the hardware from host, so the microphone also will not be available. Javascript to the rescue!
 <!--more-->
-For the first problem (capture image from your webcam) I modified something I found online (~~I couldn't find the author!~~ [here it is](https://colab.research.google.com/notebooks/snippets/advanced_outputs.ipynb#scrollTo=2viqYx97hPMi)). You can see the final notebook below (and you should be able to test it!)
+For the first problem (capture image from your webcam) I modified something I found online (~~I couldn't find the author!~~ [here it is](https://colab.research.google.com/drive/1tbAeRge6KKgCYdC6ihDrsl80aRYoVOMa), but it probably came from [this example](https://colab.research.google.com/notebooks/snippets/advanced_outputs.ipynb#scrollTo=2viqYx97hPMi)). You can see the final notebook below (and you should be able to test it!)
 
 <script src="https://gist.github.com/ricardodeazambuja/058f4c242fe67ec2d86ca2596b0905ad.js"></script>
 
