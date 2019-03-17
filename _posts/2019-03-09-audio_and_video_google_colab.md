@@ -19,3 +19,6 @@ The microphone demanded something a little bit more *hacky* and painful, so I ha
 <script src="https://gist.github.com/ricardodeazambuja/03ac98c31e87caf284f7b06286ebf7fd.js"></script>
 
 That's it! I hope you all will be able to create some cool stuff using [Google Colaboratory](https://colab.research.google.com/) now.
+
+
+**UPDATE (17/03/2019): [Apparently, it doesn't work with iOS versions of Chrome and Firefox](https://stackoverflow.com/questions/51501642/chrome-and-firefox-are-not-able-to-access-iphone-camera)** 
