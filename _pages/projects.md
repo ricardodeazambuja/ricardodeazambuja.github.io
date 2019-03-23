@@ -10,7 +10,7 @@ title: Projects
 ## Past
 - [x] [Controlling Collaborative Robots Using Robust Spiking Neural Networks]({{site.url}}/projects/collabspike2017).
 - [x] [GummiArm - A Compliant and Printable Robot Arm]({{site.url}}/projects/gummiarm)
-- [x] [Wireless Power Transfer]({{site.url}}/projects/wirelesspower.md)
+- [x] [Wireless Power Transfer]({{site.url}}/projects/wirelesspower)
 
 # Miscellaneous / Side projects
 ## Active
