@@ -41,3 +41,4 @@ title: Projects
 - [x] [Project M.A.R.T.A.](https://github.com/ricardodeazambuja/NAO_hackathon2017/tree/master/Project%20M.A.R.T.A.%20Team)
 - [x] [iSpyGame - Pepper robot](https://github.com/ricardodeazambuja/pepper-demo2017)
 - [x] [PyKDL for Python3](https://github.com/ricardodeazambuja/orocos_kinematics_dynamics/blob/master/python_orocos_kdl/Compiling%20PyKDL%20for%20Python3.ipynb)
+- [x] [AZALPL Hot rolling mill](https://www.youtube.com/watch?v=UOWg353JbDk)
