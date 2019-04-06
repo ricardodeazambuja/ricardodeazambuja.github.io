@@ -16,7 +16,7 @@ The very first example you use to introduce neural nets to students nowadays is 
 
 <!--more-->
 
-The notebook, embed below, is pretty much self-explanatory, but it has some caveats. It is based on **old** TensorFlow when we consider the new version 2.0 (today is 06/04/2019). Additionally, Matplotlib and Jupyter have problems when you swtich the backend between the notebook and the inline ones.
+The notebook, embed below, is pretty much self-explanatory, but it has some caveats. It is based on **old** TensorFlow when we consider the new version 2.0 (today is 06/04/2019). Additionally, Matplotlib and Jupyter have problems when you switch the backend between the notebook and the inline ones.
 
 Ok, that's it, I hope someone else [enjoys and makes a good use of it](https://gist.github.com/ricardodeazambuja/65bcfa955d448dd9136b71d737bfa607) too ;)
 
