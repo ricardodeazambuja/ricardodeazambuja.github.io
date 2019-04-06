@@ -5,6 +5,7 @@ category: jupyter
 draft: true
 published: true
 comments: true
+date: 2019-04-06 05:00:00
 ---
 
 I may be getting used to short posts, but here it comes: this will be another zippy one! The other day, I realized something quite interesting about the Jupyter notebook (in fact, it comes from IPython...) magic ```%load```. You can use it with an URL! 
