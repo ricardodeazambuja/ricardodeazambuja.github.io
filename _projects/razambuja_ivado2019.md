@@ -13,3 +13,4 @@ N/A
 
 ## Media:
 - [Initial project presentation - March 2019 - Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vQ2YWTRja1LYUHj7--aUaX-n0YumZSziqzIluXOQMkIef_uZ9QHN97EYvxA_0XUGMylFfSK3vfGfqBy/pub?start=true&loop=false&delayms=5000)
+- [Introducing CogniFly](https://www.youtube.com/watch?v=FD6tcLzJMEg)
