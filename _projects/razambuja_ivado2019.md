@@ -9,7 +9,7 @@ Projections from United Nations show that by 2050 we will need to produce 70% mo
 This project was accepted at the winter 2019 call from the [IVADO Postdoctoral Scholarships Program](https://ivado.ca/bourses-ivado/bourses-post-doctorales-4).
 
 ## Repositories:
-N/A
+- [BetaflightMSPy: Yet Another Implementation of Multiwii Serial Protocol Python Interface for Betaflight](https://github.com/ricardodeazambuja/BetaflightMSPy)
 
 ## Media:
 - [Initial project presentation - March 2019 - Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vQ2YWTRja1LYUHj7--aUaX-n0YumZSziqzIluXOQMkIef_uZ9QHN97EYvxA_0XUGMylFfSK3vfGfqBy/pub?start=true&loop=false&delayms=5000)
