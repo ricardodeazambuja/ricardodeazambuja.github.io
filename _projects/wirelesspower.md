@@ -5,7 +5,7 @@ title: Wireless Power Transfer
 ## Project Description:
 This project focus on the improvement of efficiency and transferred power of an inductive link circuit by the exploration of different network configurations of capacitors connected to primary and secondary coils. Our initial motivations came from the necessity to charge a sealed battery powered electronic device designed to monitor variables such as impact strength, range of temperature and humidity associated with the transport of fruits.
 
-## My whole in this project:
+## My role in this project:
 This project was the base of my MSc research from Mar/2011 to Dec/2012.
 
 
