@@ -13,4 +13,5 @@ This project was accepted at the winter 2019 call from the [IVADO Postdoctoral S
 
 ## Media:
 - [Initial project presentation - March 2019 - Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vQ2YWTRja1LYUHj7--aUaX-n0YumZSziqzIluXOQMkIef_uZ9QHN97EYvxA_0XUGMylFfSK3vfGfqBy/pub?start=true&loop=false&delayms=5000)
-- [Introducing CogniFly](https://www.youtube.com/watch?v=FD6tcLzJMEg)
+- [Introducing CogniFly](https://www.youtube.com/watch?v=FD6tcLzJMEg)  
+- [First Crash Test - Soft(ish) CogniFly](https://www.youtube.com/watch?v=8hi-tnYzGf4)
