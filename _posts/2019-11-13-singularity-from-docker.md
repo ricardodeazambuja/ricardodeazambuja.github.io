@@ -9,6 +9,7 @@ date: 2019-11-13 10:00:00
 ---
 
 TL; DR: Singularity containers are like Docker containers that don't force you to be root to run them. Ok, if you want a better explanation, I suggest [this presentation](http://www.hpcadvisorycouncil.com/events/2017/stanford-workshop/pdf/GMKurtzer_Singularity_Keynote_Tuesday_02072017.pdf) or just [try searching for it](https://lmgtfy.com/?q=what+are+singularity+containers&s=g).  
+<!--more-->
 
 I'm writing this post to keep this info easily accessible for me and my ~4 readers... An aspect I like about Singularity is the possibility of reusing a Docker image. However, afaik it only works if the image is available on [Docker Hub](https://hub.docker.com/) or another place that allows you to pull the image. The problem I encounter was that I didn't want to push my image to Docker Hub. I found a possible solution [online](https://stackoverflow.com/a/52739204). Moreover, I wanted to use the latest version of Singularity (at the time I wrote this tutorial [it was the 3.4](https://sylabs.io/guides/3.4/user-guide/index.html)) and by default Ubuntu was installing the 2.X. So, to install the latest version you can check directly [here]($ wget -O singularity-container.deb http://http.us.debian.org/debian/pool/main/s/singularity-container/) and choose what you want. This is how I did it:
 
