@@ -97,7 +97,7 @@ Volume 50, Issue 2, December 2017. [doi:10.1016/j.ifacol.2017.12.030](https://do
   * [Final IEEE Xplore version](https://ieeexplore.ieee.org/abstract/document/8901073)
   * Abstract: _During the place recognition and optimization steps of multi-robot Simultaneous Localization and Mapping (SLAM), robots need to consider information gathered from other robots working in parallel to build a global map. For these steps, major adaptations of single robot SLAM techniques are necessary to cope with challenges and constraints inherent to multi-robot systems._ 
 
-18. B. Ramtoula, **R. de Azambuja** and G. Beltrame, "**_CAPRICORN: Communication Aware Place Recognition using Interpretable Constellations of Objects in Robot Networks_**," 2020 IEEE International Conference on Robotics and Automation (ICRA), Paris, France, 2020, pp. 8761-8768, [doi: 10.1109/ICRA40945.2020.9197270](https://doi.org/10.1109/ICRA40945.2020.9197270).
+18. B. Ramtoula, **R. de Azambuja** and G. Beltrame, "**_CAPRICORN: Communication Aware Place Recognition using Interpretable Constellations of Objects in Robot Networks_**," 2020 IEEE International Conference on Robotics and Automation (ICRA), Paris, France, 2020, pp. 8761-8768, [doi:10.1109/ICRA40945.2020.9197270](https://doi.org/10.1109/ICRA40945.2020.9197270).
   * [Final version](https://ieeexplore.ieee.org/document/9197270)
   * [Preprint arXiv](https://arxiv.org/abs/1910.08810)
   * [Github repository](https://github.com/MISTLab/CAPRICORN) 
