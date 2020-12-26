@@ -22,3 +22,5 @@ That's it! I hope you all will be able to create some cool stuff using [Google C
 
 
 **UPDATE (17/03/2019): [Apparently, it doesn't work with iOS versions of Chrome and Firefox](https://stackoverflow.com/questions/51501642/chrome-and-firefox-are-not-able-to-access-iphone-camera), and iOS Safari needed some [cursor style](https://stackoverflow.com/a/16006333) to work.**
+
+**UPDATE (26/12/2020): [I forgot to update here, but I created a python library that has everything in one place!](https://github.com/ricardodeazambuja/colab_utils)**
