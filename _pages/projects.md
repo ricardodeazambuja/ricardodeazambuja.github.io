@@ -5,19 +5,21 @@ title: Projects
 
 # Research projects
 ## Active
-- [ ] [High Fidelity Data Collection for Precision Agriculture with Drone Swarms]({{site.url}}/projects/razambuja_ivado2019).
+- [ ] Smart Tourism In the Age of the General Data Protection Regulation: this project proposes the study and implementation of smart tourism techniques, more precisely capturing and interpreting visitor flow based on smart IoT sensors (covid delayed everything, official presentation will be ready, soon!).
 
 ## Past
+- [x] [High Fidelity Data Collection for Precision Agriculture with Drone Swarms]({{site.url}}/projects/razambuja_ivado2019).
 - [x] [Controlling Collaborative Robots Using Robust Spiking Neural Networks]({{site.url}}/projects/collabspike2017).
 - [x] [GummiArm - A Compliant and Printable Robot Arm]({{site.url}}/projects/gummiarm)
 - [x] [Wireless Power Transfer]({{site.url}}/projects/wirelesspower)
 
 # Miscellaneous / Side projects
 ## Active
-- [ ] [RCHummer](https://github.com/ricardodeazambuja/RCHummer)
-- [ ] [matplotlib-3d-background-image](https://github.com/ricardodeazambuja/matplotlib-3d-background-image)
+
 
 ## Past
+- [x] [RCHummer](https://github.com/ricardodeazambuja/RCHummer)
+- [x] [matplotlib-3d-background-image](https://github.com/ricardodeazambuja/matplotlib-3d-background-image)
 - [x] [Bee - The Spiking Reservoir (LSM) Simulator](https://github.com/ricardodeazambuja/Bee)
 - [x] [DTW - Dynamic Time Warping in Python / C (using ctypes)](https://github.com/ricardodeazambuja/DTW)
 - [x] [Simon Says Game with face and emotion recognition!](https://github.com/ricardodeazambuja/Simon-Says-Game---Emotions-API)
