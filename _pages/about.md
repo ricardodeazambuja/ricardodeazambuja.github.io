@@ -47,7 +47,7 @@ If you want to see a little bit about some of my old projects, I've the perfect 
 
 <a id="contact"></a>
 ### Contact
-If you want to know even more, check my [GitHub repositories](https://github.com/ricardodeazambuja), [LinkedIn profile](https://www.linkedin.com/in/ricardodeazambuja/), [follow me on Twitter](https://twitter.com/rdeazambuja78) and [Google Scholar profile](https://scholar.google.co.uk/citations?user=F8AFA4gAAAAJ).
+If you want to know even more, check my [projects](../projects/), my [GitHub repositories](https://github.com/ricardodeazambuja), [LinkedIn profile](https://www.linkedin.com/in/ricardodeazambuja/), [follow me on Twitter](https://twitter.com/rdeazambuja78) and [Google Scholar profile](https://scholar.google.co.uk/citations?user=F8AFA4gAAAAJ).
 
 <p class="message">
 If you want to contact me, the best way is by sending me a message (ricardo.azambuja (a) gmail.com)!
