@@ -20,7 +20,7 @@ If you want to try it, you will need a computer running Linux and a [Google Cora
 
 ## Here are the steps:
 Install v4l2loopback-utils:  
-```$ sudo apt install v4l2loopback-utils```
+```sudo apt install v4l2loopback-utils```
 
 Then my fork of pyfakecam:  
 ```sudo pip3 install git+git://github.com/ricardodeazambuja/pyfakewebcam --upgrade```
