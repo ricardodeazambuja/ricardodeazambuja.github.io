@@ -65,7 +65,7 @@ Now, if you are lucky, plug your Google Coral Edge TPU USB Accelerator and run t
 
 You should be able to use any video conference software selecting the "fake webcam" (you can test using the [WebRTC example](https://webrtc.github.io/samples/src/content/devices/input-output/) again). You will see an *anonymize* the video stream where anything recognized as people will become a transparent blob!
 
-Now I need to try to implement something like [that cat](https://www.youtube.com/watch?v=qcnnI6HD6DU).
+Now I need to try to implement something like [that cat](https://www.youtube.com/watch?v=qcnnI6HD6DU). my plan is use the [Pose Animator](https://blog.tensorflow.org/2020/05/pose-animator-open-source-tool-to-bring-svg-characters-to-life.html), if you decide to do it before I do, please, let me know!
 
 
 
