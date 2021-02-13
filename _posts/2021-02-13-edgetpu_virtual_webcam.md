@@ -58,6 +58,8 @@ Considering all the previous stuff worked (**don't forget to stop the previous s
 and install the requirements:
 ```sh install_requirements.sh```
 
+The unnusual requirements are: pillow, opencv-python, tflite-runtime and libedgetpu1-std.
+
 Now, if you are lucky, plug your Google Coral Edge TPU USB Accelerator and run the `pyfakewebcam_example.py`:
 ```python3 pyfakewebcam_example.py```
 
