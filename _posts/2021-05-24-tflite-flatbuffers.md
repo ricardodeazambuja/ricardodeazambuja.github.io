@@ -41,4 +41,5 @@ And finally convert it back to tflite:
 
 ```flatc -b --strict-json --defaults-json -o flatc_output schema.fbs model_mod.json```
 
-I hope this will be useful to someone else.
+I hope this will be useful to someone else... and I just wish this will be eventually incorporated to [Netron](https://github.com/lutzroeder/netron) :sweat_smile:
+(BTW, I rediscovered my theme had emojis)
