@@ -14,15 +14,15 @@ I may write another post in the near future about this, but for now it will be y
 
 I found [an amazing blog(?) post](https://towardsdatascience.com/hacking-google-coral-edge-tpu-motion-blur-and-lanczos-resize-9b60ebfaa552) (just open using a incognito / private tab if medium tells you can't read it) where the author (Vadim) dissects a tflite model and even changes its behaviour! Everything I would expect to learn from... Google!!!
 
-To start with, you need flatc, but, afaik, it's not available anywhere as an executable and you need to compile it yourself. Not the hardest thing, but annoying anyway. To solve this problem, I compiled it (Linux, x86_64) and put it [here](https://github.com/ricardodeazambuja/flatbuffers/releases/tag/v2.0.0).
+To start with, you need flatc, but, afaik, it's not available anywhere as an executable and you need to compile it yourself. Not the hardest thing, but annoying anyway. To solve this problem, I compiled it (Linux, x86_64) and put it [here](https://github.com/ricardodeazambuja/flatbuffers/releases/tag/v2.0.1a).
 
 Now, let's cut to the chase: you use flatc together with the correct schema for the tflite version you have, and you can generate a json file that you can modify using Python! First download the schema (change to schema_v3a, v3, v2...v0 if you need):
 
-```wget https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/lite/schema/schema.fbs```
+```wget https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/lite/schema/schema_v3.fbs```
 
 And convert your tflite model to json (schemas below v3 will need an extra ```--raw-binary``` argument):
 
-```flatc -t  --strict-json --defaults-json schema.fbs -- model.tflite```
+```flatc -t  --strict-json --defaults-json schema_v3.fbs -- model.tflite```
 
 Play with your json model using Python:
 ```
@@ -39,7 +39,7 @@ with open('model_mod.json', 'w') as f:
 
 And finally convert it back to tflite:
 
-```flatc -b --strict-json --defaults-json -o flatc_output schema.fbs model_mod.json```
+```flatc -b --strict-json --defaults-json -o flatc_output schema_v3.fbs model_mod.json```
 
 I hope this will be useful to someone else... and I just wish this will be eventually incorporated to [Netron](https://github.com/lutzroeder/netron) :sweat_smile:
 (BTW, I rediscovered my theme had emojis)
