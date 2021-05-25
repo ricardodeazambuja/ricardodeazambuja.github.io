@@ -20,6 +20,11 @@ Now, let's cut to the chase: you use flatc together with the correct schema for 
 
 ```wget https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/lite/schema/schema_v3.fbs```
 
+or for the latest version of TensorFlow (it should be backwards compatible...):
+
+```wget https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/lite/schema/schema.fbs```
+
+
 And convert your tflite model to json (schemas below v3 will need an extra ```--raw-binary``` argument):
 
 ```flatc -t  --strict-json --defaults-json schema_v3.fbs -- model.tflite```
