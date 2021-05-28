@@ -28,7 +28,7 @@ This time my constraint was my [GeForce 940MX](https://www.geforce.com/hardware/
 
 To make life easier for my ~4 (???) faithful readers (counting my relatives...), I decided to push the image to [Docker Hub](https://hub.docker.com/r/ricardodeazambuja/tensorflow_gpu_py3_opencv_dlib_jupyter). Therefore you *just* need to run this command to have everything up and running:
 ```
-docker run --rm -it --runtime=nvidia \
+docker run --rm -it --gpus all \
              --user $(id -u):$(id -g) \
              --group-add video --group-add sudo \
              -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
@@ -39,7 +39,7 @@ docker run --rm -it --runtime=nvidia \
 
 It will be much easier if you add the code below to the end of your `~/.bashrc` file:
 ```
-alias ai_docker='docker run --rm -it --runtime=nvidia \
+alias ai_docker='docker run --rm -it --gpus all \
              --user $(id -u):$(id -g) \
              --group-add video --group-add sudo \
              -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
@@ -95,7 +95,7 @@ Another thing you should be aware is JIT compiler. I explained this *problem* [b
 
 First, you will need to launch your image *WITHOUT* the `--rm` argument:
 ```
-docker run -it --runtime=nvidia \
+docker run -it --gpus all \
              --user $(id -u):$(id -g) \
              --group-add video --group-add sudo \
              -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
