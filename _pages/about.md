@@ -3,7 +3,7 @@ layout: page
 title: About...
 ---
 ## ...This Website
-On this website, I'll present some of the things I'm currently working on and also some of my old projects. As an Engineer, I'm always looking forward learning and trying new things. So, I hope you will enjoy it!
+On this website, I'll present some of the things I'm currently working on and also some of my old projects. As an Engineer, I'm always looking forward to learning and trying new things. So, I hope you will enjoy it!
 
 <a id="me"></a><!-- Idea from=> http://stackoverflow.com/a/15617813 -->
 ## ...Me
