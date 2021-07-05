@@ -11,7 +11,7 @@ date: 2021-07-05 00:00:00
 From time to time I have a project with some electronics that need testing. This weekend I was checking how to power my [Maple Syrup Pi Camera](https://github.com/ricardodeazambuja/Maple-Syrup-Pi-Camera) with a solar panel. However, prototypes always have a chance of generating [the magic smoke](https://en.wikipedia.org/wiki/Magic_smoke), so it's nice to be able to limit the current to avoid that fate. In addition to that, I already have a [fancy soldering iron that is power by USB-C](https://smile.amazon.co.uk/SainSmart-Upgraded-Soldering-Adjustable-Temperature/dp/B07FY658LN/), so why not a cordless power supply powered by USB-C too? Below you can see the result from my weekend tinkering :sweat_smile:.
 
 <figure>
-  <img src="../public/images/power_supply_with_powerbank.jpg?style=centerme" alt="variable-power-supply">
+  <img src="{{ site.url }}/public/images/power_supply_with_powerbank.jpg?style=centerme" alt="variable-power-supply">
   <figcaption>Digital Variable Power Supply, with Current limitation, powered by a USB-C power bank.</figcaption>
 </figure>
 
@@ -22,13 +22,13 @@ The idea of using USB-C as a variable power supply is not new. When I had this i
 At the end, the result was rather nice and I'm posting it here because I think someone else may want to build one as well (**as always, do it at your own risk, of course**) :sweat_smile:.
 
 <figure>
-  <img src="../public/images/power_supply_back.jpg?style=centerme" alt="variable-power-supply-back">
+  <img src="{{ site.url }}/public/images/power_supply_back.jpg?style=centerme" alt="variable-power-supply-back">
   <figcaption>Unreasonable gigantic banana sockets that could carry enough current to melt the USB-C connector.</figcaption>
 </figure>
 
 It took around 3 hours to bring both parts. I used a part modifier to make the infill at the USB-C connector of a higher density.
 <figure>
-  <img src="../public/images/power_supply_3d_print.png?style=centerme" alt="variable-power-supply-3d-parts">
+  <img src="{{ site.url }}/public/images/power_supply_3d_print.png?style=centerme" alt="variable-power-supply-3d-parts">
   <figcaption>3D parts after slicing.</figcaption>
 </figure>
 
