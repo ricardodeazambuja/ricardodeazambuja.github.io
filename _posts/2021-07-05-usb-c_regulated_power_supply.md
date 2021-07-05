@@ -26,7 +26,7 @@ At the end, the result was rather nice and I'm posting it here because I think s
   <figcaption>Unreasonable gigantic banana sockets that could carry enough current to melt the USB-C connector.</figcaption>
 </figure>
 
-It took around 3 hours to bring both parts. I used a part modifier to make the infill at the USB-C connector of a higher density.
+It took around 3 hours to bring both parts (I printed them individually to avoid [stringing](https://help.prusa3d.com/en/article/stringing-and-oozing_1805/)). I used a part modifier to make the infill at the USB-C connector of a higher density.
 <figure>
   <img src="{{ site.url }}/public/images/power_supply_3d_print.png?style=centerme" alt="variable-power-supply-3d-parts">
   <figcaption>3D parts after slicing.</figcaption>
