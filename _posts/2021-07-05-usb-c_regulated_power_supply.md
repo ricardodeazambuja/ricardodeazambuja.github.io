@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Variable Power Supply with Current limitation from Off-the-Shelf parts... powered by USB-C!
+title: Variable Power Supply, with Current Limitation, from Commercial-of-the-Shelf parts... powered by USB-C!
 category: electronics
 draft: true
 published: true
