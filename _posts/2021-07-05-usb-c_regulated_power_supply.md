@@ -23,7 +23,7 @@ At the end, the result was rather nice and I'm posting it here because I think s
 
 <figure>
   <img src="{{ site.url }}/public/images/power_supply_back.jpg?style=centerme" alt="variable-power-supply-back">
-  <figcaption>Unreasonable gigantic banana sockets that could carry enough current to melt the USB-C connector.</figcaption>
+  <figcaption>Unreasonably gigantic banana sockets that could carry enough current to melt the USB-C connector.</figcaption>
 </figure>
 
 It took around 3 hours to bring both parts (I printed them individually to avoid [stringing](https://help.prusa3d.com/en/article/stringing-and-oozing_1805/)). I used a part modifier to make the infill at the USB-C connector of a higher density.
