@@ -17,7 +17,7 @@ From time to time I have a project with some electronics that need testing. This
 
 <!--more-->
 
-The idea of using USB-C as a variable power supply is not new. When I had this idea, some time ago, my first google excursion already was showing [videos on youtube](https://www.youtube.com/watch?v=aIHj3qMRqqE). For the 3D model was not different, and I used [this model](https://www.thingiverse.com/thing:2429908) to get the dimensions of the window for the digital power supply. So, my variable power supply is nothing more than an [LCD Digital Programmable Constant Voltage Current Step-down Power Supply Module](https://smile.amazon.co.uk/gp/product/B01I9LQIU2/), a [ZY12PDN](https://smile.amazon.co.uk/gp/product/B08FD6381L/), two [banana sockets](https://smile.amazon.co.uk/gp/product/B08CZFTP3F/) and some 3D printed parts designed using [FreeCAD](../extras/VariablePowerSupply.FCStd). I already had the [USB-C PD power bank](https://smile.amazon.co.uk/Charmast-10000mAh-Portable-Flashlight-Compatible/dp/B07Y231M28/).
+The idea of using USB-C as a variable power supply is not new. When I had this idea, some time ago, my first google excursion already was showing [videos on youtube](https://www.youtube.com/watch?v=aIHj3qMRqqE). For the 3D model was not different, and I used [this model](https://www.thingiverse.com/thing:2429908) to get the dimensions of the window for the digital power supply. So, my variable power supply is nothing more than an LCD Digital Programmable Constant Voltage Current Step-down Power Supply Module (DPS3003 / DPS3005 / DPS5005), a [ZY12PDN](https://smile.amazon.co.uk/gp/product/B08FD6381L/), two [banana sockets](https://smile.amazon.co.uk/gp/product/B08CZFTP3F/) and some 3D printed parts designed using [FreeCAD](../extras/VariablePowerSupply.FCStd). I already had the [USB-C PD power bank](https://smile.amazon.co.uk/Charmast-10000mAh-Portable-Flashlight-Compatible/dp/B07Y231M28/).
 
 At the end, the result was rather nice and I'm posting it here because I think someone else may want to build one as well (**as always, do it at your own risk, of course**) :sweat_smile:.
 
@@ -43,3 +43,6 @@ All the links to [smile.amazon.co.uk](https://smile.amazon.co.uk/gp/chpf/about/r
 
 **Note - 2:**  
 Have I already mentioned that I take no responsibilities if you put the world on fire trying to build your own? :sweat_smile:
+
+**Note - 3:**  
+After this post was [featured on Hackaday](https://hackaday.com/2021/07/18/its-super-easy-to-build-yourself-a-usb-c-variable-power-supply-these-days/), I learned about [this nice blog post](https://befinitiv.wordpress.com/2020/08/06/usb-c-pd-for-ts100-dps5005-lab-power-supply-power-drill/) where the same thing was done back in 2020 and even a drill was converted to USB-C - definitelly my next weekend project! And there's the [DC6006L](https://www.google.com/search?q=DC6006L) if you want to save money or you don't want to print stuff.
