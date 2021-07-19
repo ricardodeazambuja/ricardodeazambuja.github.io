@@ -17,7 +17,7 @@ From time to time I have a project with some electronics that need testing. This
 
 <!--more-->
 
-The idea of using USB-C as a variable power supply is not new. When I had this idea, some time ago, my first google excursion already was showing [videos on youtube](https://www.youtube.com/watch?v=aIHj3qMRqqE). For the 3D model was not different, and I used [this model](https://www.thingiverse.com/thing:2429908) to get the dimensions of the window for the digital power supply. So, my variable power supply is nothing more than an LCD Digital Programmable Constant Voltage Current Step-down Power Supply Module (DPS3003 / DPS3005 / DPS5005), a [ZY12PDN](https://smile.amazon.co.uk/gp/product/B08FD6381L/), two [banana sockets](https://smile.amazon.co.uk/gp/product/B08CZFTP3F/) and some 3D printed parts designed using [FreeCAD](../extras/VariablePowerSupply.FCStd). I already had the [USB-C PD power bank](https://smile.amazon.co.uk/Charmast-10000mAh-Portable-Flashlight-Compatible/dp/B07Y231M28/).
+The idea of using USB-C as a variable power supply is not new. When I had this idea, some time ago, my first google excursion already was showing [videos on youtube](https://www.youtube.com/watch?v=aIHj3qMRqqE). For the 3D model was not different, and I used [this model](https://www.thingiverse.com/thing:2429908) to get the dimensions of the window for the digital power supply. So, my variable power supply is nothing more than an LCD Digital Programmable Constant Voltage Current Step-down Power Supply Module (DPS3003 / DPS3005 / DPS5005), a [ZY12PDN](https://smile.amazon.co.uk/gp/product/B08FD6381L/), two [banana sockets](https://smile.amazon.co.uk/gp/product/B08CZFTP3F/) and some 3D printed parts designed using [FreeCAD]({{site.url}}/public/extras/VariablePowerSupply.FCStd). I already had the [USB-C PD power bank](https://smile.amazon.co.uk/Charmast-10000mAh-Portable-Flashlight-Compatible/dp/B07Y231M28/).
 
 At the end, the result was rather nice and I'm posting it here because I think someone else may want to build one as well (**as always, do it at your own risk, of course**) :sweat_smile:.
 
@@ -33,10 +33,10 @@ It took around 3 hours to bring both parts (I printed them individually to avoid
 </figure>
 
 I used [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer) to slice the parts because I like to use the part modifiers. Here are the files:  
-  * [FreeCAD file](../extras/VariablePowerSupply.FCStd) (I'm still learning how to use it, so don't judge me...)
-  * [3D AMF file for the case](VariablePowerSupply-Case.amf)
-  * [3D AMF file for the lid](VariablePowerSupply-Lid.amf)
-  * [PrusaSlicer project file](VariablePowerSupply-Lid.3mf) ([you can check how to use the part modifiers in this video](https://www.youtube.com/watch?v=6PVeh43Or-g))
+  * [FreeCAD file]({{site.url}}/public/extras/VariablePowerSupply.FCStd) (I'm still learning how to use it, so don't judge me...)
+  * [3D AMF file for the case]({{site.url}}/public/extras/VariablePowerSupply-Case.amf)
+  * [3D AMF file for the lid]({{site.url}}/public/extras/VariablePowerSupply-Lid.amf)
+  * [PrusaSlicer project file]({{site.url}}/public/extras/VariablePowerSupply-Lid.3mf) ([you can check how to use the part modifiers in this video](https://www.youtube.com/watch?v=6PVeh43Or-g))
 
 **Note - 1:**  
 All the links to [smile.amazon.co.uk](https://smile.amazon.co.uk/gp/chpf/about/ref=smi_aas_redirect) are there because _AmazonSmile is a simple and automatic way for you to support a charity of your choice every time you shop, at no cost to you._ You can search online for the names and you will find them somewhere else.
