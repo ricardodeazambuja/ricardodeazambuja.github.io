@@ -46,3 +46,4 @@ Have I already mentioned that I take no responsibilities if you put the world on
 
 **Note - 3:**  
 After this post was [featured on Hackaday](https://hackaday.com/2021/07/18/its-super-easy-to-build-yourself-a-usb-c-variable-power-supply-these-days/), I learned about [this nice blog post](https://befinitiv.wordpress.com/2020/08/06/usb-c-pd-for-ts100-dps5005-lab-power-supply-power-drill/) where the same thing was done back in 2020 and even a drill was converted to USB-C - definitelly my next weekend project! And there's the [DC6006L](https://www.google.com/search?q=DC6006L) if you want to save money or you don't want to print stuff.
+Last but not least, the variable voltage module can be upgrades with a custom firmware called [OpenDPS](https://github.com/kanflo/opendps). They also have [a bunch of case builds that you should have a look](https://github.com/kanflo/opendps/issues/183#issuecomment-544913940).
