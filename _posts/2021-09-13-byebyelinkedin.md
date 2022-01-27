@@ -14,4 +14,4 @@ Today, I decided to close my LinkedIn account. I'd been mulling over this idea f
 I still have my twitter account ([@rdeazambuja78](https://twitter.com/rdeazambuja78)), but I'm thinking about shutting it down as well.
 
 **UPDATE (23/12/2021):**
-I decided to re-open my account because it was too deeply available on the search engines and I became afraid someone could take it over to create a fake accout. So, now I'm back to LinkedIn, but without any contacts and almost zero personal info available for the time being.  
+I decided to re-open my account because it was too deeply available on the search engines and I became afraid someone could take it over to create a fake account. So, now I'm back to LinkedIn, but without any contacts and almost zero personal info available for the time being.  
