@@ -5,9 +5,9 @@ title: Projects
 
 # Research projects
 ## Active
-- [ ] Smart Tourism In the Age of the General Data Protection Regulation: this project proposes the study and implementation of smart tourism techniques, more precisely capturing and interpreting visitor flow based on smart IoT sensors (covid delayed everything, official presentation will be ready, soon!).
-
+- [ ] [Secure Self-Landing for Unmanned Aircraft Systems SSL-UAS]({{site.url}}/projects/nrc_poly2022)
 ## Past
+- [x] [Smart Tourism In the Age of the General Data Protection Regulation]({{site.url}}/projects/msca_uoe2021).
 - [x] [High Fidelity Data Collection for Precision Agriculture with Drone Swarms]({{site.url}}/projects/razambuja_ivado2019).
 - [x] [Controlling Collaborative Robots Using Robust Spiking Neural Networks]({{site.url}}/projects/collabspike2017).
 - [x] [GummiArm - A Compliant and Printable Robot Arm]({{site.url}}/projects/gummiarm)
@@ -15,7 +15,9 @@ title: Projects
 
 # Miscellaneous / Side projects
 ## Active
-
+- [ ] [The CogniFly Project](https://thecognifly.github.io/)
+- [ ] [Maple Syrup Pi Camera](https://github.com/ricardodeazambuja/Maple-Syrup-Pi-Camera)
+- [ ] [colab_utils](https://github.com/ricardodeazambuja/colab_utils)
 
 ## Past
 - [x] [RCHummer](https://github.com/ricardodeazambuja/RCHummer)

@@ -40,9 +40,13 @@ I've been an entrepreneur since ever, having tried my hand with an [Engineering 
 
 I love electronics, programming, robotics and, whenever I can, I also try to design and build new things using wood [(like this, literally, handmade radial plotter)](../public/images/MyRadialRouter.jpg) or [3D printed parts](http://www.thingiverse.com/ricardodeazambuja/designs), but sometimes I also enjoy taking old things apart to reuse or just to see what is inside!
 
+<a id="curr_projects"></a>
+### Current projects
+I try to keep an updated list of my "serious" projects [here]({{site.url}}/projects/)
+
 <a id="old_projects"></a>
 ### Old projects
-If you want to see a little bit about some of my old projects, I've the perfect post for you:  
+If you want to see a little bit about some of my very old projects, I've the perfect post for you:  
 [My Old Projects or Why You Should Document and Share Your Stuff Online](../projects/2016/12/19/old_projects/)
 
 <a id="contact"></a>
