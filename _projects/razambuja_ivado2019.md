@@ -21,3 +21,4 @@ This project was accepted at the winter 2019 call from the [IVADO Postdoctoral S
 - [Introducing CogniFly](https://www.youtube.com/watch?v=FD6tcLzJMEg)  
 - [First Crash Test - Soft(ish) CogniFly](https://www.youtube.com/watch?v=8hi-tnYzGf4)
 - [The CogniFly Project](https://thecognifly.github.io/)
+- [Short presentation for the ICRA 2021 Workshop on Resilient and Long-Term Autonomy for Aerial Robotic Systems](https://www.youtube.com/watch?v=fsle7ZF_Qh4)
