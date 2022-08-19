@@ -5,7 +5,7 @@ category: linux
 draft: true
 published: true
 comments: true
-date: 2022-08-19 00:00:00
+date: 2022-08-18 00:00:00
 ---
 
 I am always using [Google Colab](https://colab.research.google.com/), but in many cases I also need to install something using [`apt-get`](https://linux.die.net/man/8/apt-get). The problem was that sometimes you need to add a new repository, update, install... then your notebook becomes full of text and that eats your memory (locally too as the browser needs to render that after all). So, today I found [a nice post](https://peteris.rocks/blog/quiet-and-unattended-installation-with-apt-get/) explaining the reason why the `-qq` argument may still leave some bits of text behind. You should go there and read it by yourself, but I will copy some info here in case that website disappears.
