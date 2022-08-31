@@ -102,3 +102,8 @@ $ docker rm registry
 ```
 
 Since I'm far from an expert on Singularity, I will end this post by leaving the link to [Singularity User Guide](https://sylabs.io/guides/3.4/user-guide/index.html) here, just in case someone still wants to know more.
+
+
+**UPDATE (31/08/2022):**
+I found this repository that has some interesting scripts to automate the use of Singularity containers (also one script to install Singularity): https://github.com/ctu-mrs/mrs_singularity/     
+Apparently it doesn't mount the $HOME dir by default anymore (version 3.9.5).
