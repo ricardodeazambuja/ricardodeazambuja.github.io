@@ -9,6 +9,7 @@ date: 2022-12-28 00:00:00
 ---
 
 Today I was trying to implement, using PyTorch, the Focal Loss ([paperswithcode](https://paperswithcode.com/method/focal-loss), [original paper](https://arxiv.org/abs/1708.02002)) for my semantic segmentation model. Focal Loss is "just" Cross Entropy Loss with some extra sauce that allows you to adjust (&lambda;) how much weight you give to examples that are harder to classify otherwise your optimiser will `focus` on the easy examples because they have more impact on the loss. To save time, I didn't even considered writing my own code (although the focal loss is fairly simple), and I went directly to google where I found [this nice example](https://github.com/VainF/DeepLabV3Plus-Pytorch/blob/0c67dce524b2eb94dc3587ff2832e28f11440cae/utils/loss.py):
+<!--more-->
 
 ```python
 import torch.nn as nn
