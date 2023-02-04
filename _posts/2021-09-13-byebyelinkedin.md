@@ -18,3 +18,6 @@ After all my efforts, I couldn't find another place where I can easily keep my p
 
 **UPDATE (23/12/2021):**
 I decided to re-open my account because it was too deeply available on the search engines and I became afraid someone could take it over to create a fake account. So, now I'm back to LinkedIn, but without any contacts and almost zero personal info available for the time being.   
+
+**UPDATE (04/02/2022):**
+To be honest, after the Twitter take over by Musk, I started using LinkedIn more and it has been useful to learn about new papers, technologies, etc.   
