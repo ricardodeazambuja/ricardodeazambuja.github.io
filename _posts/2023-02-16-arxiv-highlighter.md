@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotating papers and sharing your thought, from your browser
+title: Annotating papers and sharing your thoughts, directly from your browser
 category: deep_learning
 draft: true
 published: true
