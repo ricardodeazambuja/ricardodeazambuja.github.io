@@ -20,8 +20,11 @@ I submitted the project proposal and I was selected for one of the only 25 [TRAI
 - [Counting, Classifying and Tracking Vehicles Routes at Road Intersections with YOLOv4 and DeepSORT](https://github.com/LSI-UFRGS/vehicles-identify-and-tracking)
 
 ## Media:
-- https://magpi.raspberrypi.com/articles/maple-syrup-pi
-- https://www.hackster.io/ricardodeazambuja/maple-syrup-pi-camera-7962d9
-- https://blog.adafruit.com/2021/08/07/maple-syrup-pi-camera-a-low-power-customizable-aiot-smart-camera/
-- https://hackaday.com/2021/06/30/smart-camera-based-on-google-coral/
-- https://www.geeky-gadgets.com/maple-syrup-raspberry-pi-iot-smart-camera-16-08-2021/
+- [https://magpi.raspberrypi.com/articles/maple-syrup-pi](https://magpi.raspberrypi.com/articles/maple-syrup-pi)
+- [https://hackaday.com/2021/06/30/smart-camera-based-on-google-coral/](https://hackaday.com/2021/06/30/smart-camera-based-on-google-coral/)
+- [https://www.hackster.io/ricardodeazambuja/maple-syrup-pi-camera-7962d9](https://www.hackster.io/ricardodeazambuja/maple-syrup-pi-camera-7962d9)
+- [https://blog.adafruit.com/2021/08/07/maple-syrup-pi-camera-a-low-power-customizable-aiot-smart-camera/](https://blog.adafruit.com/2021/08/07/maple-syrup-pi-camera-a-low-power-customizable-aiot-smart-camera/)
+- [https://www.geeky-gadgets.com/maple-syrup-raspberry-pi-iot-smart-camera-16-08-2021/](https://www.geeky-gadgets.com/maple-syrup-raspberry-pi-iot-smart-camera-16-08-2021/)
+- [https://www.electronics-lab.com/explore-ai-capabilities-on-raspberry-pi-zero-w-with-googles-coral-usb-accelerator/](https://www.electronics-lab.com/explore-ai-capabilities-on-raspberry-pi-zero-w-with-googles-coral-usb-accelerator/)
+- [https://twitter.com/edgeimpulse/status/1409581030730829828](https://twitter.com/edgeimpulse/status/1409581030730829828)
+- [https://hackaday.com/2021/09/22/even-faster-fourier-transforms-on-the-raspbery-pi-zero/](https://hackaday.com/2021/09/22/even-faster-fourier-transforms-on-the-raspbery-pi-zero/)
