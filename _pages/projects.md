@@ -5,8 +5,9 @@ title: Projects
 
 # Research projects
 ## Active
-- [ ] [Secure Self-Landing for Unmanned Aircraft Systems SSL-UAS]({{site.url}}/projects/nrc_poly2022)
+- [ ] ???
 ## Past
+- [X] [Secure Self-Landing for Unmanned Aircraft Systems SSL-UAS]({{site.url}}/projects/nrc_poly2022)
 - [x] [Smart Tourism In the Age of the General Data Protection Regulation]({{site.url}}/projects/msca_uoe2021).
 - [x] [High Fidelity Data Collection for Precision Agriculture with Drone Swarms]({{site.url}}/projects/razambuja_ivado2019).
 - [x] [Controlling Collaborative Robots Using Robust Spiking Neural Networks]({{site.url}}/projects/collabspike2017).
@@ -18,6 +19,7 @@ title: Projects
 - [ ] [The CogniFly Project](https://thecognifly.github.io/)
 - [ ] [Maple Syrup Pi Camera](https://github.com/ricardodeazambuja/Maple-Syrup-Pi-Camera)
 - [ ] [colab_utils](https://github.com/ricardodeazambuja/colab_utils)
+- [ ] [arxiv-highlighter](https://github.com/ricardodeazambuja/arxiv-highlighter)
 
 ## Past
 - [x] [RCHummer](https://github.com/ricardodeazambuja/RCHummer)
