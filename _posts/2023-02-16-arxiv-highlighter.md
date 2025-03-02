@@ -7,6 +7,9 @@ published: true
 comments: true
 ---
 
+**Note (2025/03/02)**  
+Apparently, something changed in regards to how the servers (arXiv and/or github) are configured and the cross-domain thing is blocked. Thus, arxiv-highlighter is no more :crying_face:.
+
 In the last weeks I've been reading a lot of papers. Usually I open an online document (e.g. google docs) and write down my notes there while I read a paper. However, I also like to highlight a pdf as I read it, but that forces me to download the pdf and keep the final file. Therefore I was trying to find a way to annotate a pdf directly from my web browser... and that's the motivation that made me hack together my very own [`arxiv-highlighter`](https://github.com/ricardodeazambuja/arxiv-highlighter)!
 
 <!--more-->
