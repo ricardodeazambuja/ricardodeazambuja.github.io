@@ -7,9 +7,6 @@ published: true
 comments: true
 ---
 
-**Note (2025/03/02)**  
-Apparently, something changed in regards to how the servers (arXiv and/or github) are configured and the cross-domain thing is blocked. Thus, arxiv-highlighter is no more :crying_face:.
-
 In the last weeks I've been reading a lot of papers. Usually I open an online document (e.g. google docs) and write down my notes there while I read a paper. However, I also like to highlight a pdf as I read it, but that forces me to download the pdf and keep the final file. Therefore I was trying to find a way to annotate a pdf directly from my web browser... and that's the motivation that made me hack together my very own [`arxiv-highlighter`](https://github.com/ricardodeazambuja/arxiv-highlighter)!
 
 <!--more-->
@@ -27,3 +24,6 @@ Here is an example from a multi-page pdf annotated directly from [arXiv](https:/
 You can find more details and source code directly in the repo: https://github.com/ricardodeazambuja/arxiv-highlighter
 
 ~~One problem I see with this approach is the fact I am sending this huge request to the server, even though the server isn't using it at all because everything happens inside the browser (Javascript). Maybe something using a URL with `javascript:` (kind of blocked by modern browsers when you cut and paste)? Another option would be to open a prompt where the user could paste the compressed data directly, but this way you would need to copy the data, click on a link and only after the page is loaded paste the compressed data... it seems annoying to me.~~ Solved by using a `#` instead of `?` (thanks to [stackoverflow](https://stackoverflow.com/a/68170088)).
+
+**Note (2025/03/02)**
+Apparently, something changed in regards to how the servers (arXiv and/or github) are configured and the cross-domain thing is blocked. Thus, arxiv-highlighter is no more :crying face:.
