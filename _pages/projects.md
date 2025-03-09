@@ -5,7 +5,7 @@ title: Projects
 
 # Research projects
 ## Active
-- [ ] ???
+- [ ] Cutting-edge robotics and computer vision-based systems for the manufacturing of high-precision sensors (point-of-care blood analysis systems). Let's hope I will convince the company to open source some of the repos in the near future. 
 ## Past
 - [X] [Secure Self-Landing for Unmanned Aircraft Systems SSL-UAS]({{site.url}}/projects/nrc_poly2022)
 - [x] [Smart Tourism In the Age of the General Data Protection Regulation]({{site.url}}/projects/msca_uoe2021).
@@ -16,6 +16,7 @@ title: Projects
 
 # Miscellaneous / Side projects
 ## Active
+- [ ] [Advanced QR Code Generator](https://ricardodeazambuja.com/qrcodegenerator/)
 - [ ] [The CogniFly Project](https://thecognifly.github.io/)
 - [ ] [Maple Syrup Pi Camera](https://github.com/ricardodeazambuja/Maple-Syrup-Pi-Camera)
 - [ ] [colab_utils](https://github.com/ricardodeazambuja/colab_utils)

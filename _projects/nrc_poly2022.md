@@ -9,12 +9,16 @@ This project interlaces three different disciplines: vision, machine learning an
 I led the development of the safe-landing vision system and managed junior researchers working on the project.
 
 ## Repositories:
-- https://github.com/MISTLab/DOVESEI
-- https://github.com/ricardodeazambuja/ros2_quad_sim_python
-- https://github.com/ricardodeazambuja/ros2-playground
-- https://github.com/ricardodeazambuja/carla-simulator-python
-- https://github.com/ricardodeazambuja/carla-ros
-- https://github.com/ricardodeazambuja/ros-carla-msgs
+- [https://github.com/MISTLab/DOVESEI](https://github.com/MISTLab/DOVESEI)
+- [https://github.com/ricardodeazambuja/ros2_quad_sim_python](https://github.com/ricardodeazambuja/ros2_quad_sim_python)
+- [https://github.com/ricardodeazambuja/ros2-playground](https://github.com/ricardodeazambuja/ros2-playground)
+- [https://github.com/ricardodeazambuja/carla-simulator-python](https://github.com/ricardodeazambuja/carla-simulator-python)
+- [https://github.com/ricardodeazambuja/carla-ros](https://github.com/ricardodeazambuja/carla-ros)
+- [https://github.com/ricardodeazambuja/ros-carla-msgs](https://github.com/ricardodeazambuja/ros-carla-msgs)
+- [https://github.com/ricardodeazambuja/DiffusionEq4PathPlanning](https://github.com/ricardodeazambuja/DiffusionEq4PathPlanning)
+- [https://github.com/ricardodeazambuja/AerialViewGenerator](https://github.com/ricardodeazambuja/AerialViewGenerator)
+- [https://github.com/ricardodeazambuja/depthimage_to_pointcloud2](https://github.com/ricardodeazambuja/depthimage_to_pointcloud2)
+- [https://github.com/ricardodeazambuja/elmer_fem_playground](https://github.com/ricardodeazambuja/elmer_fem_playground)
 
 ## Media:
 - [DOVESEI: Dynamic Open Vocabulary Enhanced Safe-landing with Intelligence](https://arxiv.org/abs/2308.11471)
