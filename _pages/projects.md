@@ -3,7 +3,6 @@ layout: page
 title: Projects
 ---
 
-# Research projects
 ## Active
 - [ ] Cutting-edge robotics and computer vision-based systems for the manufacturing of high-precision sensors (point-of-care blood analysis systems). Let's hope I will convince the company to open source some of the repos in the near future. 
 ## Past
