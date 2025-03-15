@@ -11,7 +11,7 @@ Last week, I saw [this post on LinkedIn](https://www.linkedin.com/posts/carlos-a
 
 I mentioned in the comments that I had, in the past, managed to run Gazebo on Google Colab. So, I decided to find that old notebook and here it's:
 
-https://colab.research.google.com/gist/ricardodeazambuja/fae4db3dcee352fee3f95966ca4f3ec6/example-virtual-screen-opengl-gazebo-ignition.ipynb
+[https://colab.research.google.com/gist/ricardodeazambuja/fae4db3dcee352fee3f95966ca4f3ec6/example-virtual-screen-opengl-gazebo-ignition.ipynb](https://colab.research.google.com/gist/ricardodeazambuja/fae4db3dcee352fee3f95966ca4f3ec6/example-virtual-screen-opengl-gazebo-ignition.ipynb)
 
 The magic is only possible thanks to open source software like [X virtual framebuffer](https://github.com/cgoldberg/xvfbwrapper), [VirtualGL](https://virtualgl.org/), [PyVirtualDisplay](https://github.com/ponty/PyVirtualDisplay), among others!
 
