@@ -16,6 +16,6 @@ https://colab.research.google.com/gist/ricardodeazambuja/fae4db3dcee352fee3f9596
 The magic is only possible thanks to open source software like [X virtual framebuffer](https://github.com/cgoldberg/xvfbwrapper), [VirtualGL](https://virtualgl.org/), [PyVirtualDisplay](https://github.com/ponty/PyVirtualDisplay), among others!
 
 <figure>
-  <img src="{{ site.url }}/public/images/IgnitionGazeboIonicRunningOnGoogleColab?style=centerme" alt="Ignition Gazebo Ionic Running on Google Colab">
+  <img src="{{ site.url }}/public/images/IgnitionGazeboIonicRunningOnGoogleColab.png?style=centerme" alt="Ignition Gazebo Ionic Running on Google Colab">
   <figcaption>Ignition Gazebo Ionic Running on Google Colab</figcaption>
 </figure>
