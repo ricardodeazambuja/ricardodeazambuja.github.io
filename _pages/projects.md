@@ -19,9 +19,9 @@ title: Projects
 - [ ] [The CogniFly Project](https://thecognifly.github.io/)
 - [ ] [Maple Syrup Pi Camera](https://github.com/ricardodeazambuja/Maple-Syrup-Pi-Camera)
 - [ ] [colab_utils](https://github.com/ricardodeazambuja/colab_utils)
-- [ ] [arxiv-highlighter](https://github.com/ricardodeazambuja/arxiv-highlighter)
 
 ## Past
+- [x] [arxiv-highlighter](https://github.com/ricardodeazambuja/arxiv-highlighter)
 - [x] [RCHummer](https://github.com/ricardodeazambuja/RCHummer)
 - [x] [matplotlib-3d-background-image](https://github.com/ricardodeazambuja/matplotlib-3d-background-image)
 - [x] [Bee - The Spiking Reservoir (LSM) Simulator](https://github.com/ricardodeazambuja/Bee)
