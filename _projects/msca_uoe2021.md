@@ -20,6 +20,7 @@ I submitted the project proposal and I was selected for one of the only 25 [TRAI
 - [Counting, Classifying and Tracking Vehicles Routes at Road Intersections with YOLOv4 and DeepSORT](https://github.com/LSI-UFRGS/vehicles-identify-and-tracking)
 
 ## Media:
+- [MagPi Magazine Issue 108, page 90 - PDF version available online](https://magazine.raspberrypi.com/issues/108)
 - [https://magpi.raspberrypi.com/articles/maple-syrup-pi](https://magpi.raspberrypi.com/articles/maple-syrup-pi)
 - [https://hackaday.com/2021/06/30/smart-camera-based-on-google-coral/](https://hackaday.com/2021/06/30/smart-camera-based-on-google-coral/)
 - [https://www.hackster.io/ricardodeazambuja/maple-syrup-pi-camera-7962d9](https://www.hackster.io/ricardodeazambuja/maple-syrup-pi-camera-7962d9)
