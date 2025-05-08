@@ -20,6 +20,8 @@ I led the development of the safe-landing vision system and managed junior resea
 - [https://github.com/ricardodeazambuja/depthimage_to_pointcloud2](https://github.com/ricardodeazambuja/depthimage_to_pointcloud2)
 - [https://github.com/ricardodeazambuja/elmer_fem_playground](https://github.com/ricardodeazambuja/elmer_fem_playground)
 - [https://github.com/ricardodeazambuja/simple_quad_gazebo](https://github.com/ricardodeazambuja/simple_quad_gazebo)
+- [https://github.com/ricardodeazambuja/mlflow-er](https://github.com/ricardodeazambuja/mlflow-er)
+- [https://github.com/ricardodeazambuja/rclpy_param_helper](https://github.com/ricardodeazambuja/rclpy_param_helper)
 
 ## Media:
 - [DOVESEI: Dynamic Open Vocabulary Enhanced Safe-landing with Intelligence](https://arxiv.org/abs/2308.11471)

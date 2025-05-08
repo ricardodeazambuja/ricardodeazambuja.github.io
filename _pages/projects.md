@@ -15,12 +15,13 @@ title: Projects
 
 # Miscellaneous / Side projects
 ## Active
-- [ ] [Advanced QR Code Generator](https://ricardodeazambuja.com/qrcodegenerator/)
+- [ ] [Barcode Tool - Generator & Scanner](https://ricardodeazambuja.com/barcodetool/)
 - [ ] [The CogniFly Project](https://thecognifly.github.io/)
 - [ ] [Maple Syrup Pi Camera](https://github.com/ricardodeazambuja/Maple-Syrup-Pi-Camera)
 - [ ] [colab_utils](https://github.com/ricardodeazambuja/colab_utils)
 
 ## Past
+- [x] [Advanced QR Code Generator](https://ricardodeazambuja.com/qrcodegenerator/)
 - [x] [arxiv-highlighter](https://github.com/ricardodeazambuja/arxiv-highlighter)
 - [x] [RCHummer](https://github.com/ricardodeazambuja/RCHummer)
 - [x] [matplotlib-3d-background-image](https://github.com/ricardodeazambuja/matplotlib-3d-background-image)
@@ -29,6 +30,7 @@ title: Projects
 - [x] [Simon Says Game with face and emotion recognition!](https://github.com/ricardodeazambuja/Simon-Says-Game---Emotions-API)
 - [x] [sPLYnnaker](https://github.com/ricardodeazambuja/sPLYnnaker)
 - [x] [Brian Step-By-Step](https://github.com/ricardodeazambuja/BrianStep-By-Step)
+- [x] [SNN-Experiments](https://github.com/ricardodeazambuja/SNN-Experiments)
 - [x] [pyPIDTune](https://github.com/ricardodeazambuja/pyPIDTune)
 - [x] [UDPHelper](https://github.com/ricardodeazambuja/UDPHelper)
 - [x] [OptiTrackPython](https://github.com/ricardodeazambuja/OptiTrackPython)
@@ -47,4 +49,9 @@ title: Projects
 - [x] [Project M.A.R.T.A.](https://github.com/ricardodeazambuja/NAO_hackathon2017/tree/master/Project%20M.A.R.T.A.%20Team)
 - [x] [iSpyGame - Pepper robot](https://github.com/ricardodeazambuja/pepper-demo2017)
 - [x] [PyKDL for Python3](https://github.com/ricardodeazambuja/orocos_kinematics_dynamics/blob/master/python_orocos_kdl/Compiling%20PyKDL%20for%20Python3.ipynb)
+- [x] [keras-adventures](https://github.com/ricardodeazambuja/keras-adventures)
+- [x] [rndwriter](https://github.com/ricardodeazambuja/rndwriter)
+- [x] [pizero_opencv_and_friends](https://github.com/ricardodeazambuja/pizero_opencv_and_friends)
+- [x] [SpiNNaker Workshop 2016](https://github.com/ricardodeazambuja/SpiNNakerWorkshop2016)
+- [x] [Bag-of-Words Experiments](https://github.com/ricardodeazambuja/bag-of-words-mod)
 - [x] [AZALPL Hot rolling mill](https://www.youtube.com/watch?v=UOWg353JbDk)

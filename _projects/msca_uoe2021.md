@@ -18,6 +18,7 @@ I submitted the project proposal and I was selected for one of the only 25 [TRAI
 - [RPI streaming video from its camera using https and user/password](https://github.com/ricardodeazambuja/rpi_camera_streaming_https_password)
 - [Experiments using the RPI Zero GPU for FFT/IFFT 1D/2D](https://github.com/ricardodeazambuja/RPI0_GPU_FFT)
 - [Counting, Classifying and Tracking Vehicles Routes at Road Intersections with YOLOv4 and DeepSORT](https://github.com/LSI-UFRGS/vehicles-identify-and-tracking)
+- [Python library that uses a ready-made TFLite model and spits poses](https://github.com/ricardodeazambuja/PoseNet_TFLite_Runtime)
 
 ## Media:
 - [MagPi Magazine Issue 108, page 90 - PDF version available online](https://magazine.raspberrypi.com/issues/108)
