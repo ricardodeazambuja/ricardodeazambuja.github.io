@@ -15,6 +15,7 @@ title: Projects
 
 # Miscellaneous / Side projects
 ## Active
+- [ ] [Gemini-ask](https://github.com/ricardodeazambuja/gemini-ask)
 - [ ] [MKS Servo42D CAN Control Project](https://github.com/ricardodeazambuja/mks_servo_can)
 - [ ] [Barcode Tool - Generator & Scanner](https://ricardodeazambuja.com/barcodetool/)
 - [ ] [The CogniFly Project](https://thecognifly.github.io/)
