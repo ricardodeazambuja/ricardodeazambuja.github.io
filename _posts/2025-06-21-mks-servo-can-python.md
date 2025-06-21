@@ -29,7 +29,7 @@ I needed this for my own robotics projects, and frankly, I was tired of the same
 
 ## 🛠️ **What I Built (With AI Assistance)**
 
-This wasn't a "code it in a weekend" project. I spent weeks iterating with multiple AI models — Claude Code for the heavy lifting, Gemini for brainstorming, and Jules for the tricky bits. 
+This wasn't just a "code it in a weekend" project. Yes, I started it during a weekend and that got me to a good working state. However, as this was a personal project that I would only work on it randomly during my free time, I spent extra weeks iterating with multiple AI models — Claude Code for the heavy lifting, Gemini for brainstorming, and Jules for the tricky bits  — before we got this current version. 
 
 **The secret sauce? I designed the development process around comprehensive testing and simulation from day one.** This meant the AI agents could write, test, and iterate on code without any physical hardware. They could validate motor control algorithms, test edge cases, and debug communication protocols entirely in the simulator.
 
