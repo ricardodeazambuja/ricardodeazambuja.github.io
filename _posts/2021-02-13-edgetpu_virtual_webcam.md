@@ -73,5 +73,14 @@ Finally, a video starring **blobman**!
 
 Now I need to try to implement something like [that cat](https://www.youtube.com/watch?v=qcnnI6HD6DU). my plan is use the [Pose Animator](https://blog.tensorflow.org/2020/05/pose-animator-open-source-tool-to-bring-svg-characters-to-life.html), if you decide to do it before I do, please, let me know!
 
+**Affiliated links**
+
+If you want to support my work, you can buy a Google Coral USB Edge TPU ML Accelerator coprocessor from Amazon (or anything else, really) using the affiliated link below:
+
+* [Google Coral USB Edge TPU ML Accelerator coprocessor](https://amzn.to/3T0RORd)
+
+
+You lose nothing and I (may) get a few peanuts from Amazon.
+
 
 

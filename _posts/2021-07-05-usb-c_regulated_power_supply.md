@@ -54,7 +54,7 @@ Today (12/03/2022), I was searching about this same little board, I want to use 
 
 **Affiliated links**
 
-If you want to support my work, you can buy an equivalent USB microscope on Amazon (or anything else, really) using the affiliated link below:
+If you want to support my work, you can buy the parts from Amazon (or anything else, really) using the affiliated links below:
 
 * [LCD Digital Programmable Constant Voltage Current Step-Down Power Supply](https://amzn.to/4ecmEzQ)
 * [USB PD Adapter](https://amzn.to/4jZD9AA)

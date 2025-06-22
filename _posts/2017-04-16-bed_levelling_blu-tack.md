@@ -89,3 +89,13 @@ Cheers!
 
 **UPDATE (23/04/2017):**  
 I created a [G-CODE file]({{ site.url }}/public/extras/0_bed_levelling.gcode) to *automate* the manual bed leveling a little bit. It is working with Marlin firmware (1.1.0 RC8) and you just need to *print* that file (pressing the button to advance each step) to position the nozzle helping you to adjust the bed. However, I have no idea which side effects it could have in a printer different from mine, so **use it at your own risk** and change it (any text editor with a *pure soul*) according to your taste!
+
+
+**Affiliated links**
+
+If you want to support my work, you can get your hands on a delta 3D printer from Amazon (or anything else, really) using the affiliated links below:
+
+* [FLSUN T1 Pro Delta 3D Printer (Print volume: 260(D) x 330(H) mm)](https://amzn.to/466fues)
+* [MALYAN M300 Mini Delta 3D Printer (Print volume: 110(D) x 120(H) mm)](https://amzn.to/3G7dkki)
+
+You lose nothing and I (may) get a few peanuts from Amazon.

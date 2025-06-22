@@ -48,3 +48,12 @@ And finally convert it back to tflite:
 
 I hope this will be useful to someone else... and I just wish this will be eventually incorporated to [Netron](https://github.com/lutzroeder/netron) :sweat_smile:
 (BTW, I rediscovered my theme had emojis)
+
+**Affiliated links**
+
+If you want to support my work, you can buy a Google Coral USB Edge TPU ML Accelerator coprocessor from Amazon (or anything else, really) using the affiliated link below:
+
+* [Google Coral USB Edge TPU ML Accelerator coprocessor](https://amzn.to/3T0RORd)
+
+
+You lose nothing and I (may) get a few peanuts from Amazon.
