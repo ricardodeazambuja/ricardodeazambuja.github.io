@@ -8,7 +8,7 @@ comments: true
 date: 2021-07-05 00:00:00
 ---
 
-From time to time I have a project with some electronics that need testing. This weekend I was checking how to power my [Maple Syrup Pi Camera](https://github.com/ricardodeazambuja/Maple-Syrup-Pi-Camera) with a solar panel. However, prototypes always have a chance of generating [the magic smoke](https://en.wikipedia.org/wiki/Magic_smoke), so it's nice to be able to limit the current to avoid that fate. In addition to that, I already have a [fancy soldering iron that is power by USB-C](https://smile.amazon.co.uk/SainSmart-Upgraded-Soldering-Adjustable-Temperature/dp/B07FY658LN/), so why not a cordless power supply powered by USB-C too? Below you can see the result from my weekend tinkering :sweat_smile:.
+From time to time I have a project with some electronics that need testing. This weekend I was checking how to power my [Maple Syrup Pi Camera](https://github.com/ricardodeazambuja/Maple-Syrup-Pi-Camera) with a solar panel. However, prototypes always have a chance of generating [the magic smoke](https://en.wikipedia.org/wiki/Magic_smoke), so it's nice to be able to limit the current to avoid that fate. In addition to that, I already have a fancy soldering iron that is power by USB-C, so why not a cordless power supply powered by USB-C too? Below you can see the result from my weekend tinkering :sweat_smile:.
 
 <figure>
   <img src="{{ site.url }}/public/images/power_supply_with_powerbank.jpg?style=centerme" alt="variable-power-supply">
@@ -17,7 +17,7 @@ From time to time I have a project with some electronics that need testing. This
 
 <!--more-->
 
-The idea of using USB-C as a variable power supply is not new. When I had this idea, some time ago, my first google excursion already was showing [videos on youtube](https://www.youtube.com/watch?v=aIHj3qMRqqE). For the 3D model was not different, and I used [this model](https://www.thingiverse.com/thing:2429908) to get the dimensions of the window for the digital power supply. So, my variable power supply is nothing more than an LCD Digital Programmable Constant Voltage Current Step-down Power Supply Module (DPS3003 / DPS3005 / DPS5005), a [ZY12PDN](https://smile.amazon.co.uk/gp/product/B08FD6381L/), two [banana sockets](https://smile.amazon.co.uk/gp/product/B08CZFTP3F/) and some 3D printed parts designed using [FreeCAD]({{site.url}}/public/extras/VariablePowerSupply.FCStd). I already had the [USB-C PD power bank](https://smile.amazon.co.uk/Charmast-10000mAh-Portable-Flashlight-Compatible/dp/B07Y231M28/).
+The idea of using USB-C as a variable power supply is not new. When I had this idea, some time ago, my first google excursion already was showing [videos on youtube](https://www.youtube.com/watch?v=aIHj3qMRqqE). For the 3D model was not different, and I used [this model](https://www.thingiverse.com/thing:2429908) to get the dimensions of the window for the digital power supply. So, my variable power supply is nothing more than an LCD Digital Programmable Constant Voltage Current Step-down Power Supply Module (DPS3003 / DPS3005 / DPS5005), a ZY12PDN, two banana sockets and some 3D printed parts designed using [FreeCAD]({{site.url}}/public/extras/VariablePowerSupply.FCStd). I already had the USB-C PD power bank.
 
 At the end, the result was rather nice and I'm posting it here because I think someone else may want to build one as well (**as always, do it at your own risk, of course**) :sweat_smile:.
 
@@ -49,4 +49,17 @@ After this post was [featured on Hackaday](https://hackaday.com/2021/07/18/its-s
 Last but not least, the variable voltage module can be upgraded with a custom firmware called [OpenDPS](https://github.com/kanflo/opendps). They also have [a bunch of case builds that you should have a look](https://github.com/kanflo/opendps/issues/183#issuecomment-544913940).
 
 **Note - 4:**  
-Today (12/03/2022), I was searching about this same little board, I want to use it to power a charger for my 21700, when I found [this blog post](cellshttps://www.alexwhittemore.com/notes-on-usb-pd-triggers-and-zy12pdn-instructions/) that explains about the ZY12PDN and suggests a better option called [PD Buddy Sink](https://www.tindie.com/products/clarahobbs/pd-buddy-sink/). So, this is really just a note to myself :wink:.
+Today (12/03/2022), I was searching about this same little board, I want to use it to power a charger for my 21700, when I found [this blog post](https://www.alexwhittemore.com/notes-on-usb-pd-triggers-and-zy12pdn-instructions/) that explains about the ZY12PDN and suggests a better option called [PD Buddy Sink](https://www.tindie.com/products/clarahobbs/pd-buddy-sink/). So, this is really just a note to myself :wink:.
+
+
+**Affiliated links**
+
+If you want to support my work, you can buy an equivalent USB microscope on Amazon (or anything else, really) using the affiliated link below:
+
+* [LCD Digital Programmable Constant Voltage Current Step-Down Power Supply](https://amzn.to/4ecmEzQ)
+* [USB PD Adapter](https://amzn.to/4jZD9AA)
+* [Banana sockets](https://amzn.to/4kUvEwc)
+* [USB Soldering Iron TS80P](https://amzn.to/44b6mmp)
+* [USB PD Powerbank](https://amzn.to/4lh3ZoO)
+
+You lose nothing and I (may) get a few peanuts from Amazon.

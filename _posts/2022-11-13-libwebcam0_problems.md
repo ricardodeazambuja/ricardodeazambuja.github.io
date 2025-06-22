@@ -28,3 +28,11 @@ Integrated_Webcam_HD: Integrate (usb-0000:00:14.0-5):
 ```
 
 In my situation, the microscope was the `USB2.0 UVC PC Camera`. You can get extra info with `ffmpeg -f v4l2 -list_formats all -i /dev/video2`. Finally, just use `ffplay /dev/video2`.
+
+**Affiliated links**
+
+If you want to support my work, you can buy an equivalent USB microscope on Amazon (or anything else, really) using the affiliated link below:
+
+* [USB Microscope Camera](https://amzn.to/44bhHCH)
+
+You lose nothing and I (may) get a few peanuts from Amazon.
