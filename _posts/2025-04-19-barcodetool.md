@@ -15,3 +15,5 @@ This webside already has an [Advanced QR code Generator](https://ricardodeazambu
   <img src="{{ site.url }}/public/images/barcodetool.png?style=centerme" alt="Usage example of the new Barcode Tool - Generator & Scanner">
   <figcaption>Usage example of the Barcode Tool - Generator & Scanner</figcaption>
 </figure>
+
+[**Hey mom, I got featured on Hackaday!**](https://hackaday.com/2025/06/23/visual-code-generator-to-end-all-generators/)
