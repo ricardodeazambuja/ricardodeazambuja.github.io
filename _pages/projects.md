@@ -15,7 +15,6 @@ title: Projects
 
 # Miscellaneous / Side projects
 ## Active
-- [ ] [Gemini-ask](https://github.com/ricardodeazambuja/gemini-ask)
 - [ ] [MKS Servo42D CAN Control Project](https://github.com/ricardodeazambuja/mks_servo_can)
 - [ ] [Barcode Tool - Generator & Scanner](https://ricardodeazambuja.com/barcodetool/)
 - [ ] [The CogniFly Project](https://thecognifly.github.io/)
@@ -23,6 +22,10 @@ title: Projects
 - [ ] [colab_utils](https://github.com/ricardodeazambuja/colab_utils)
 
 ## Past
+- [x] [Boink! An experiment on vibe coded web games](https://github.com/ricardodeazambuja/boink)
+- [x] [Experiments on vibe coding and distributed version control systems](https://github.com/ricardodeazambuja/WebDVCS)
+- [x] [File deduplicator, but running on your web browser](https://github.com/ricardodeazambuja/deduplicator)
+- [x] [Gemini-ask](https://github.com/ricardodeazambuja/gemini-ask)
 - [x] [Advanced QR Code Generator](https://ricardodeazambuja.com/qrcodegenerator/)
 - [x] [arxiv-highlighter](https://github.com/ricardodeazambuja/arxiv-highlighter)
 - [x] [RCHummer](https://github.com/ricardodeazambuja/RCHummer)
