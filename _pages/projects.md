@@ -22,6 +22,7 @@ title: Projects
 - [ ] [colab_utils](https://github.com/ricardodeazambuja/colab_utils)
 
 ## Past
+- [x] [Air Golf - Yet Another Experiment on Vibe Coded Web Games](https://github.com/ricardodeazambuja/airgolf)
 - [x] [Boink! An experiment on vibe coded web games](https://github.com/ricardodeazambuja/boink)
 - [x] [Experiments on vibe coding and distributed version control systems](https://github.com/ricardodeazambuja/WebDVCS)
 - [x] [File deduplicator, but running on your web browser](https://github.com/ricardodeazambuja/deduplicator)
