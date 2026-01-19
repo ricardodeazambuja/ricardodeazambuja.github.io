@@ -4,8 +4,9 @@ title: Projects
 ---
 
 ## Active
-- [ ] Cutting-edge robotics and computer vision-based systems for the manufacturing of high-precision sensors (point-of-care blood analysis systems). Let's hope I will convince the company to open source some of the repos in the near future. 
+- [ ] [Exploring the new paradigms of engineering in the age of AI agents](https://github.com/orgs/MadeByTokens/repositories)
 ## Past
+- [x] Cutting-edge robotics and computer vision-based systems for the manufacturing of high-precision sensors (point-of-care blood analysis systems). Let's hope I will convince the company to open source some of the repos in the near future. 
 - [X] [Secure Self-Landing for Unmanned Aircraft Systems SSL-UAS]({{site.url}}/projects/nrc_poly2022)
 - [x] [Smart Tourism In the Age of the General Data Protection Regulation]({{site.url}}/projects/msca_uoe2021).
 - [x] [High Fidelity Data Collection for Precision Agriculture with Drone Swarms]({{site.url}}/projects/razambuja_ivado2019).
