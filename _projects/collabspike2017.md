@@ -14,6 +14,7 @@ This project was the base of my PhD research from 2013 to 2017.
 3. [Graceful Degradation under Noise on Brain Inspired Robot Controllers](https://github.com/ricardodeazambuja/ICONIP2016)
 4. [Short-Term Plasticity in a Liquid State Machine Biomimetic Robot Arm Controller](https://github.com/ricardodeazambuja/IJCNN2017)
 5. [Sensor Fusion Approach Using Liquid StateMachines for Positioning Control](https://github.com/ricardodeazambuja/I2MTC2017-LSMFusion)
+6. [Neurorobotic Simulations on the Degradation of Multiple Column Liquid State Machines](https://github.com/ricardodeazambuja/IJCNN2017-2)
 
 ## Media:
 1. [Controlling the BAXTER robot using Liquid State Machines](https://www.youtube.com/watch?v=4gF7mfjGllA)
