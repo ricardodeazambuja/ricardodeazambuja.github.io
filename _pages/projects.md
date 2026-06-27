@@ -62,4 +62,6 @@ title: Projects
 - [x] [pizero_opencv_and_friends](https://github.com/ricardodeazambuja/pizero_opencv_and_friends)
 - [x] [SpiNNaker Workshop 2016](https://github.com/ricardodeazambuja/SpiNNakerWorkshop2016)
 - [x] [Bag-of-Words Experiments](https://github.com/ricardodeazambuja/bag-of-words-mod)
+- [x] [SkillfulBots](https://drive.google.com/file/d/1LHZnY3Bd4yAY84cK3tag3D0P5oE56ACt/view?usp=drive_open)
+- [x] [A Neuromorphic Bike Co-pilot Assistant](https://docs.google.com/presentation/d/e/2PACX-1vT_uQyStnRsoTlIabuHIVb4uAjlfwOWAcUyBbIh57M_SbYlkAs-ERbkAI76lqpx8Mr17c2zYpDApGyQ/pub?start=false&loop=false&delayms=3000)
 - [x] [AZALPL Hot rolling mill](https://www.youtube.com/watch?v=UOWg353JbDk)
