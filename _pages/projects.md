@@ -4,6 +4,7 @@ title: Projects
 ---
 
 ## Active
+- [ ] [Designing state-of-the-art situational awareness and drone detection systems](https://www.cnvg.ca/products?pgid=mpli0jcc8-fe27c0e2-3d01-4bce-947a-4ac4d35896fa)
 - [ ] [Exploring the new paradigms of engineering in the age of AI agents](https://github.com/orgs/MadeByTokens/repositories)
 ## Past
 - [x] Cutting-edge robotics and computer vision-based systems for the manufacturing of high-precision sensors (point-of-care blood analysis systems). Let's hope I will convince the company to open source some of the repos in the near future. 
