@@ -8,3 +8,27 @@ permalink: 404.html
   <h1 class="page-title">404: Page not found</h1>
   <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}/">Head back home</a> to try finding it again.</p>
 </div>
+
+<script>
+(function () {
+  // GitHub Pages URLs are case-sensitive; wrong-case project URLs fall
+  // through to this page, so fix the casing and redirect.
+  // Canonical repo names (regenerate with:
+  //   gh api --paginate "users/ricardodeazambuja/repos?per_page=100" -q '.[] | select(.has_pages) | .name')
+  var projects = [
+    "airgolf", "arxiv-highlighter", "azamec", "bag-of-words-mod",
+    "barcodetool", "boink", "chaos_chess", "deduplicator",
+    "DroneDroneGoose", "GummiArm-moveit", "okosai", "pochibete",
+    "protoface", "qrcodegenerator", "SynthAndI", "WebDVCS"
+  ];
+  var parts = location.pathname.split("/");
+  var seg = (parts[1] || "").toLowerCase();
+  for (var i = 0; i < projects.length; i++) {
+    if (seg === projects[i].toLowerCase() && parts[1] !== projects[i]) {
+      parts[1] = projects[i];
+      location.replace(parts.join("/") + location.search + location.hash);
+      return;
+    }
+  }
+})();
+</script>
